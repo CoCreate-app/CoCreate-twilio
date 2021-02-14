@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+<html>
+<head>
+ <title>Twilio</title>
+
+<style type="text/css">
+  .template{display:none}
+</style>
+
+ <head>     
+      <h1>Create Sub Accounts - Twilio</h1>
+<form>
+   Friendly Name<input data-twilio='twilioCreateSubAccount.friendlyName' value='' required></input>
+
+  <button data-actions='twilioCreateSubAccount'>Click create Sub Account</button>
+</form>
+
+<script>
+var config = {
+      apiKey: 'c2b08663-06e3-440c-ef6f-13978b42883a',
+      securityKey: 'f26baf68-e3a9-45fc-effe-502e47116265',
+      organization_Id: '5de0387b12e200ea63204d6c',
+      host: '52.203.210.252:8081'
+}
+
+</script>
+
+<!--CoCreateJS-->
+<script src="https://server.cocreate.app/js/CoCreate.min.js"></script>
+
+<!--CoCreate Plugins-->
+<script src="https://server.cocreate.app/js/CoCreate-api.js"></script>
+<script src="../src/CoCreate-twilio.js"></script>
+
+

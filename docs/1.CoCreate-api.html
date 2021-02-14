@@ -30,7 +30,7 @@
 			<div class="display:flex align-items:center font-size:20px social_share" data-height="600" data-width="500" data-media="https://via.placeholder.com/300/09f/fff.png"> <a href="https://github.com/CoCreate-app/CoCreate-dnd" target="_blank" class="margin-right:15px"><i class="fab fa-github"></i></a> <a class="margin-right:15px share" data-network='twitter' title="Share on twitter"><i class="fab fa-twitter"></i></a>                <a class="margin-right:15px share" data-network='facebook' title="Share on Facebook"><i class="fab fa-facebook"></i></a> <a class="margin-right:15px share" data-network='instagram' title="Share on instagram"><i class="fab fa-instagram"></i></a>                <a class="margin-right:15px share" data-network='share' title="Share on share"><i class="fas fa-share-alt"></i></a> </div>
 		</div>
 		<p class="max-width:500px margin:20px_10px">CoCreate-api is the template that include the client component and server side for api processing.</p>
-		<div id="boilerplate-section" class="display:flex flex-wrap:wrap">
+		<div id="twilio-section" class="display:flex flex-wrap:wrap">
 			<div class="flex-grow:1 min-width:300px width:50% padding:0px_10px margin:20px_0px">
 				<h2 class="border-bottom:1px_solid_lightgrey padding:5px_0px">Install</h2>
 				<pre><code class="language-javascript">npm install cocreate-api</code></pre>
@@ -67,54 +67,6 @@
     }
 				    </code></pre>
 				</p>
-
-<!--				<h3 class="border-bottom:1px_solid_lightgrey margin-top:40px padding:5px_0px">CoCreate-api functions</h3>-->
-<!--				<p class="padding:10px_0px">-->
-<!--				</p>-->
-
-<!--				<h4 class="margin-top:20px padding:5px_0px">Fetch Array case</h4>-->
-<!--<div class="margin-top:10px">-->
-	
-<!--					<pre><code class="language-html">-->
-<!--&lt;div class="card"-->
-<!--	data-template_id="temp2"-->
-<!--	data-fetch_collection="render_test"-->
-<!--	data-filter_value="5f5aeace3a7246b7cf2e3ffc"-->
-<!--	data-filter_name="_id"-->
-<!--	data-filter_operator="$eq"-->
-<!--	data-fetch_name="jsonArray"&gt;-->
-<!--	&lt;div class="template" data-template_id="temp2" data-value="{{email}}"&gt;-->
-<!--		&lt;h4 value="{{email}}" name="email"&gt;&lt;/h4&gt;-->
-<!--		&lt;h4 value="{{home}}" name="home"&gt;&lt;/h4&gt;-->
-<!--	&lt;/div&gt;	-->
-<!--&lt;/div&gt;-->
-<!--				</code></pre> -->
-<!--</div>-->
-
-<!--				<h4 class="margin-top:20px padding:5px_0px">Documents fetch case</h4>-->
-<!--					<pre><code class="language-html">-->
-<!--&lt;div class="card"-->
-<!--	data-template_id="render_testing"-->
-<!--	data-fetch_collection="render_test"-->
-<!--	data-filter_value="render"-->
-<!--	data-filter_name="type"-->
-<!--	data-redner_id="testing"-->
-<!--	data-filter_operator="$eq"&gt;-->
-<!--	&lt;div class="template" data-template_id="render_test" data-value="{{testing.data._id}}" data-render_array="testing.data"&gt;-->
-<!--		&lt;h3 data-attribute="email" data-value="{{testing.data.email}}" name="email" value="{{testing.data.email}}"&gt;&lt;/h3&gt;-->
-<!--		&lt;h4 data-collection="{{testing.collection}}" name="home" value="{{testing.data.home}}"&gt;&lt;/h4&gt;-->
-<!--		&lt;h4 name="other_email" value="{{testing.data.personal_info.email}}"&gt;&lt;/h4&gt;-->
-<!--		&lt;div class="template display:flex justify-content:space-between" data-render_array="testing.data.jsonArray" data-render_key="sub_jsonArray"&gt;-->
-<!--			&lt;h5 name="email" value="{{sub_jsonArray.email}}"&gt;&lt;/h5&gt;-->
-<!--			&lt;h5 name="home" value="{{sub_jsonArray.home}}"&gt;&lt;/h5&gt;-->
-<!--		&lt;/div&gt;-->
-<!--		&lt;div class="template display:flex justify-content:space-between" data-render_array="testing.data.stringArray" data-value="--"&gt;-->
-<!--			&lt;h5 name="email" value="--"&gt;&lt;/h5&gt;-->
-<!--		&lt;/div&gt;-->
-<!--	&lt;/div&gt;-->
-<!--&lt;/div&gt;-->
-<!--				</code></pre>-->
-
 				<h3 class="border-bottom:1px_solid_lightgrey margin-top:20px padding:5px_0px">CoCreate-api functions</h3>
 				
                 <ul class="list-style-type:none ">
@@ -122,7 +74,7 @@
 		        		<h4><span>register(module_name, instance)</span><span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>
 	        			<p>The function that register cocreate-api module.</p>
 	        			<p class="padding:10px_0px">
-							<pre><code class="language-javascript">CoCreateApi.register('stripe', CoCreateStripe)</code></pre>
+							<pre><code class="language-javascript">CoCreate.api.init('stripe', CoCreateStripe)</code></pre>
 						</p>
 	        			
 					</li>
@@ -130,7 +82,7 @@
 		        		<h4><span>send(module_name, action_name, data)</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>
 	        			<p>The function that send the data into server by module_name and action</p>
 	        			<p class="padding:10px_0px">
-							<pre><code class="language-javascript">CoCreateApi.send('stripe', 'createCustomer', {
+							<pre><code class="language-javascript">CoCreate.api.send('stripe', 'createCustomer', {
 	name: 'Name', 
 	email: 'test@gmail.com', 
 	...
@@ -141,7 +93,7 @@
 		        		<h4><span>render(module_name, action_name, data)</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
 	        			<p>The function to render data into template</p>
 	        			<p class="padding:10px_0px">
-							<pre><code class="language-javascript">CoCreateApi.render('stripe', 'createCustomer', {name: 'Name', email: 'test@gmail.com', ...})</code></pre>
+							<pre><code class="language-javascript">CoCreate.api.render('stripe', 'createCustomer', {name: 'Name', email: 'test@gmail.com', ...})</code></pre>
 						</p>
 					</li>
 					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
@@ -150,8 +102,8 @@
 	        			<p class="padding:10px_0px">
 		        			<pre><code class="language-javascript">
 let container = btn.closest("form") || document;
-let data = CoCreateApi.getFormData('stripe', 'createCustomer',  container);
-CoCreateApi.send(this.id, 'createCustomer', [data]);
+let data = CoCreate.api.getFormData('stripe', 'createCustomer',  container);
+CoCreate.api.send(this.id, 'createCustomer', [data]);
 
 </code></pre>
 						</p>

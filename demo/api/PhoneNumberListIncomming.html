@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Twilio</title>
+
+    <style type="text/css">
+        .template {
+            display: none
+        }
+        .btnsubmit {
+            margin: 25px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-family: 'Cookie', cursive;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1>Twilio Filter Phone Number in Account:- </h1>
+    <div style="display: flex;">
+        <form>
+            <input placeholder="limit" data-twilio="twilioGetIncommingPhoneNumbers.limit" required>
+            <button class="btnsubmit"  data-actions='twilioGetIncommingPhoneNumbers'>Twilio Fetch Numbers in account</button>
+        </form>
+    
+    </div>
+
+    
+    <div data-template_id="twilioGetIncommingPhoneNumbers">
+         <h4>Twilio Availble Numbers :- </h4>
+        <div class="template margin:10px " data-value="{{data.phoneNumber}}" data-render_array="data">
+            <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap ">
+                <form>
+                    <input value="{{data.sid}}" type="hidden" data-twilio="twilioDeletePhoneNumber.sid" required>
+                    number: <span value="{{data.phoneNumber}}"></span>
+                    <input value="{{data.sid}}" type="hidden" data-twilio="updateIncomingPhoneNumber.sid" required>
+                    <br>Method: <input placeholder="voiceMethod" value="{{data.voiceMethod}}" data-twilio="updateIncomingPhoneNumber.voiceMethod" required>
+                    <br>Incomming Call: <input placeholder="voiceUrl" value="{{data.voiceUrl}}" data-twilio="updateIncomingPhoneNumber.voiceUrl" required>
+                    <br/>
+                    <button class="btnsubmit"  data-actions='twilioDeletePhoneNumber'>DEL</button>
+                    <button class="btnsubmit"  data-actions='updateIncomingPhoneNumber'>Updated</button>
+                </form>
+            </div>
+            <hr/>
+        </div>
+    </div>
+</body>
+
+
+<script>
+    var config = {
+        apiKey: 'c2b08663-06e3-440c-ef6f-13978b42883a',
+        securityKey: 'f26baf68-e3a9-45fc-effe-502e47116265',
+        organization_Id: '5de0387b12e200ea63204d6c',
+        
+    }
+    //host: 'ws://52.203.210.252:8081'
+</script>
+
+<!--CoCreateJS-->
+<script src="https://server.cocreate.app/js/CoCreate.min.js"></script>
+
+<!--CoCreate Plugins-->
+<script src="https://server.cocreate.app/js/CoCreate-api.js"></script>
+
+<script type="text/javascript" src="https://server.cocreate.app:8088/js/twilio.min.js"></script>
+
+<script src="../src/CoCreate-twilio.js"></script>
+
+
+</html>

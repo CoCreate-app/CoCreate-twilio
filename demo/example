@@ -1,0 +1,25 @@
+							respose {
+								say: 'hello'
+								dial{
+									confrence{
+										friendlyName:
+										waiturl:
+										waitMethod:
+									}
+								}
+							}
+							<dial>
+								<say>hello</say>
+								<conference waitUrl ="" waitMethod ="" friendlyName="">
+									support
+								</conference>	
+							</dial>
+							dial{
+								fallBackUrl:
+								hello:
+								confrence{
+									friendlyName:
+									waiturl:
+									waitMethod:
+								}
+							}
