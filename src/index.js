@@ -1,5 +1,14 @@
-let URL_TWILIO = "https://server.cocreate.app:8088/twilio";
-const device = new Twilio.Device();
+import api from '../../../CoCreate-components/CoCreate-api/src'
+import {socket, crud} from '../../../CoCreateJS/src';
+// import * as loadTwilio from 'twilio-client-mirror';
+import { Device } from 'twilio-client'; 
+// import Twilio from 'twilio-client';
+// const Device = require('twilio-client').Device;
+// hello
+
+let URL_TWILIO = "https://server.cocreate.app:8088/api_/twilio";
+const device = new Device();
+// const device = new Twilio.Device();
 let myConnection = '';
 let debug_twilio = false;
 let myStorage = window.localStorage;
@@ -9,7 +18,12 @@ let user = myStorage.getItem('user_id') ? myStorage.getItem('user_id') : '5ff49e
 if(document.querySelector('[data-twilio="setUserNameLocalStorage.user_id"]'))
 	document.querySelector('[data-twilio="setUserNameLocalStorage.user_id"]').value=user;
 
-fetch(URL_TWILIO+'/token/'+user)
+fetch(URL_TWILIO+'/token/'+user, {
+	        'mode': 'cors',
+	        'headers': {
+            	'Access-Control-Allow-Origin': '*',
+        	}
+    	})
  .then(response => response.json())
  .then(data => {
     let token = data.token;
@@ -44,7 +58,7 @@ fetch(URL_TWILIO+'/token/'+user)
       let  CallSid = myConnection.parameters.CallSid;
       // //document.querySelector("[data-twilio='holdCall.CallSid']").value=CallSid;
       console.log(" Sendind Render to -> createCall",{render2: myConnection})
-      CoCreate.render.data(`[data-template_id=createCall]`, {render2: myConnection});
+      api.render(`[data-template_id=createCall]`, {render2: myConnection});
     })
     
     device.on('disconnect', (connection)=>{
@@ -71,9 +85,9 @@ fetch(URL_TWILIO+'/token/'+user)
         document.querySelector("[data-actions='answerCall']").style.display = 'initial'
         document.querySelector("[data-id='dialConference']").style.display = 'initial'
         let  CallSid = myConnection.parameters.CallSid
-        console.log('incomming ',CallSid,myConnection)  
+        console.log('incomming => ',CallSid,{render2: myConnection})  
         //render in form
-        CoCreate.api.render('twilio', 'createCall', {render2: myConnection});
+        api.render( 'createCall', {render2: myConnection});
     });
       //end FTECH
  })
@@ -133,7 +147,7 @@ const CoCreateTwilio = {
         }
        data = {data: data};
        console.log("data ",data)
-      CoCreate.api.render('callRecordingList', data);
+      api.render('callRecordingList', data);
 	},
 	render_holdParticipantConference: function(data) {
 	  let id_participante = data;
@@ -173,7 +187,7 @@ const CoCreateTwilio = {
 	  console.log(data)
 	  let id_conference = data.idconference;
 	  data = {participant: data.participants};
-	  CoCreate.api.render('getParticipantsConferences_'+id_conference, data);
+	  api.render('getParticipantsConferences_'+id_conference, data);
 	},
 	action_hangupCall: function(data) {
 			console.log(" hangupCall ")
@@ -200,7 +214,7 @@ const CoCreateTwilio = {
             alert(data.data)
         }
        data = {data: data};
-      CoCreate.api.render('getConferences', data);
+      api.render('getConferences', data);
 	},
 	
 	action_joinConference: function(element, data) {
@@ -211,11 +225,12 @@ const CoCreateTwilio = {
 	},
 	
 	action_createCall: function(element, data) {
-		var data = CoCreate.api.getFormData('twilio', 'dial', document)
+		var data = api.getFormData('twilio', 'dial', document)
+		console.log("createCall ",data)
     	myConnection = device.connect(data);
     	let  CallSid = myConnection.parameters.CallSid;
     	console.log("createCall ",myConnection)
-    	CoCreate.api.render(this.id, 'createCall', {render2: myConnection});
+    	api.render(this.id, 'createCall', {render2: myConnection});
 	},
 	
 	action_answerCall: function(element, data) {
@@ -225,7 +240,7 @@ const CoCreateTwilio = {
 	action_dialQueue: async function(element, data) {
 	  //alert('unhold')
 	  //myConnection = device.connect({'unhold':true,'queue':'support'});
-	  /*var data = CoCreate.api.getFormData('twilio', 'dialQueue', element)
+	  /*var data = api.getFormData('twilio', 'dialQueue', element)
 	  console.log("dialQueue",data)
 	  */
 	  console.log("dialQueue ",element.dataset['friendlyname'])
@@ -238,17 +253,17 @@ const CoCreateTwilio = {
         }
        data = {data: data};
        console.log("DAta ",data)
-      CoCreate.api.render('getListQueues', data);	
+      api.render('getListQueues', data);	
 	},
 	
 	action_unholdCall: function(element, data) {
-	  var data = CoCreate.api.getFormData('twilio', 'holdCall', document)
+	  var data = api.getFormData('twilio', 'holdCall', document)
 	  data["unhold"]=true;
 	  console.log(" DAta unhold ",data)
 	  myConnection = device.connect(data);
 	},
 	action_setUserNameLocalStorage: function(element, data) {
-		var data = CoCreate.api.getFormData('twilio', 'setUserNameLocalStorage', document)
+		var data = api.getFormData('twilio', 'setUserNameLocalStorage', document)
 		myStorage.setItem('user_id',data['user_id']);
 	},
 
@@ -259,7 +274,7 @@ const CoCreateTwilio = {
             alert(data.data)
         }
         console.log(data);
-        // CoCreate.api.render('randermsg', data);
+        // api.render('randermsg', data);
     },
 	
 	render_twilioCreateSubAccount: function(data) {
@@ -326,7 +341,7 @@ const CoCreateTwilio = {
 	// 	action_twilioListSubAccounts: function(element, data) {
 	// 		//. data rendering by cocreate-render
 	// 		console.log('rander',data)
-	// 	    CoCreate.api.render(this.id, 'xxxCreateCard', {render2: data});
+	// 	    api.render(this.id, 'xxxCreateCard', {render2: data});
 	
 	// 	}
 
@@ -336,7 +351,9 @@ const CoCreateTwilio = {
 
 }
 
-CoCreate.api.init({
+api.init({
 	name: CoCreateTwilio.id, 
 	module:	CoCreateTwilio,
 });
+
+export default CoCreateTwilio;
