@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.1...v1.0.2) (2021-03-30)
+
+
+### Bug Fixes
+
+* cocreatejs from npm ([09cf370](https://github.com/CoCreate-app/CoCreate-twilio/commit/09cf37096c0f9311e7876681230379a5f56edd47))
+
 ## [1.0.1](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.0...v1.0.1) (2021-03-29)
 
 
