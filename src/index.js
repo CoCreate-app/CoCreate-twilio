@@ -1,5 +1,5 @@
 import api from '@cocreate/api/src'
-import {socket, crud} from '@cocreate/cocreatejs';
+import crud from '@cocreate/cocreatejs';
 // import * as loadTwilio from 'twilio-client-mirror';
 import { Device } from 'twilio-client'; 
 // import Twilio from 'twilio-client';
