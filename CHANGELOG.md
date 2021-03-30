@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.2...v1.0.3) (2021-03-30)
+
+
+### Bug Fixes
+
+* import paths using npm ([845df3c](https://github.com/CoCreate-app/CoCreate-twilio/commit/845df3c3fdbc782bbc67679e13b3a60089b09b2e))
+
 ## [1.0.2](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.1...v1.0.2) (2021-03-30)
 
 
