@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.3...v1.0.4) (2021-03-31)
+
+
+### Bug Fixes
+
+* remove yarn.lock and package-lock.json ([bf8484e](https://github.com/CoCreate-app/CoCreate-twilio/commit/bf8484ef8f301e2c88330c94a6401f6bad3d628d))
+
 ## [1.0.3](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.2...v1.0.3) (2021-03-30)
 
 
