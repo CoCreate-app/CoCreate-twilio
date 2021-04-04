@@ -201,6 +201,7 @@ const CoCreateTwilio = {
 		if(data.create_conference){
 			//createConference
 			let friendlyName = data.data.friendlyName ? data.data.friendlyName : 'CocreateConference'
+			console.log("friendlyName ",friendlyName)
 			myConnection = device.connect({'opt':'joinConference','friendlyname':friendlyName});
 		      let  CallSid = myConnection.parameters.CallSid;
 		      console.log("CallSid, createConference ",CallSid)
