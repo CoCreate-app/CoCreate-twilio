@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.4...v1.0.5) (2021-04-04)
+
+
+### Bug Fixes
+
+* update socket to socket-lient and crud to crud client" ([27f7b36](https://github.com/CoCreate-app/CoCreate-twilio/commit/27f7b36d1e455cbea704279a68e4d3ebecf85744))
+
 ## [1.0.4](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.3...v1.0.4) (2021-03-31)
 
 
