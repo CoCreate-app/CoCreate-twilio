@@ -9,7 +9,7 @@ A simple twilio component in vanilla javascript. Easily configured using HTML5 d
 
 ![CoCreate-twilio](https://cdn.cocreate.app/docs/CoCreate-twilio.gif)
 
-## [Docs & Demo](https://cocreate.app/docs/clone)
+## [Docs & Demo](https://cocreate.app/docs/twilio)
 
 For a complete guide and working demo refer to the [doumentation](https://cocreate.app/docs/twilio)
 
