@@ -1,3 +1,11 @@
+## [1.0.6](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.5...v1.0.6) (2021-04-19)
+
+
+### Bug Fixes
+
+* ci and build process ([6a0e8d5](https://github.com/CoCreate-app/CoCreate-twilio/commit/6a0e8d58fe04057580789f7dc6b853d730d633c6))
+* npm publish and cdn deployment ([5b2bd00](https://github.com/CoCreate-app/CoCreate-twilio/commit/5b2bd00e78a76c8ad477d9f4d66c270b30ec982b))
+
 ## [1.0.5](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.4...v1.0.5) (2021-04-04)
 
 
