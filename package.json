@@ -51,6 +51,7 @@
     "clean-webpack-plugin": "^3.0.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^1.5.0",
     "process": "^0.11.10",
     "style-loader": "^2.0.0",
     "terser-webpack-plugin": "^5.1.1",
@@ -61,8 +62,9 @@
     "webpack-log": "^3.0.2"
   },
   "dependencies": {
+    "@cocreate/api": "^1.0.7",
     "@cocreate/docs": "^1.0.3",
-    "mini-css-extract-plugin": "^1.5.0",
+    "twilio": "^3.60.0",
     "twilio-client-mirror": "0.0.2",
     "util": "^0.12.3"
   }
