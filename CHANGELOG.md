@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.6...v1.0.7) (2021-04-21)
+
+
+### Bug Fixes
+
+* One package for server and client ([fec24b9](https://github.com/CoCreate-app/CoCreate-twilio/commit/fec24b9014c2f756f18326d0b88851fdb62c28ce))
+
 ## [1.0.6](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.5...v1.0.6) (2021-04-19)
 
 
