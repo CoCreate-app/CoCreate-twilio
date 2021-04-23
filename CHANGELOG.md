@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.7...v1.0.8) (2021-04-23)
+
+
+### Bug Fixes
+
+* readme and documentation. Removed securitykeys ([ebc167d](https://github.com/CoCreate-app/CoCreate-twilio/commit/ebc167dd309076315def28513e8bc0d3fe38f378))
+
 ## [1.0.7](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.6...v1.0.7) (2021-04-21)
 
 
