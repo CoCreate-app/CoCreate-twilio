@@ -10,7 +10,7 @@ module.exports = {
             "path": "./docs/index.html",
             "collection": "files",
             "document_id": "6029b6a3e979fb17407e25dc",
-            "key": "html",
+            "key": "src",
             "data":{
                 "name": "twilio Doc",
                 "domains": ["cocreate.app", "server.cocreate.app", "ws.cocreate.app"],
