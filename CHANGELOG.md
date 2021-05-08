@@ -1,3 +1,10 @@
+## [1.0.11](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.10...v1.0.11) (2021-05-08)
+
+
+### Bug Fixes
+
+* add css auto parse and save to docs. ([02a12a4](https://github.com/CoCreate-app/CoCreate-twilio/commit/02a12a42d060277f6f1f14cbc626766d4c56eaca))
+
 ## [1.0.10](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.9...v1.0.10) (2021-04-27)
 
 
