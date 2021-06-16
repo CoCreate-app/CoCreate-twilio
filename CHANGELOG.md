@@ -1,3 +1,10 @@
+## [1.0.13](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.12...v1.0.13) (2021-06-16)
+
+
+### Bug Fixes
+
+* added header for seo ([9200504](https://github.com/CoCreate-app/CoCreate-twilio/commit/920050444ede9ccf2ae890350be6b391a8d37ffd))
+
 ## [1.0.12](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.11...v1.0.12) (2021-05-22)
 
 
