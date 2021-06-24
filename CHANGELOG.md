@@ -1,3 +1,10 @@
+## [1.0.14](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.13...v1.0.14) (2021-06-24)
+
+
+### Bug Fixes
+
+* update all [@cocreate](https://github.com/cocreate) to use latest versions ([76af44c](https://github.com/CoCreate-app/CoCreate-twilio/commit/76af44c707f3f64525b4d91735c6a3497ca812cf))
+
 ## [1.0.13](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.12...v1.0.13) (2021-06-16)
 
 
