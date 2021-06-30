@@ -1,3 +1,10 @@
+## [1.0.17](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.16...v1.0.17) (2021-06-30)
+
+
+### Bug Fixes
+
+* automated and manual workflows ([bc66ab3](https://github.com/CoCreate-app/CoCreate-twilio/commit/bc66ab32084221a3a2f642c0b9a94efe0350f46a))
+
 ## [1.0.16](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.15...v1.0.16) (2021-06-25)
 
 
