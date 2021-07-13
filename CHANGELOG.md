@@ -1,3 +1,11 @@
+## [1.0.20](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.19...v1.0.20) (2021-07-13)
+
+
+### Bug Fixes
+
+* add yarn lockfile to git ignore ([3cc3dc7](https://github.com/CoCreate-app/CoCreate-twilio/commit/3cc3dc7ff0fa94954a6fa544a15cbdae1d809b44))
+* remove yarn.lock ([0a61b44](https://github.com/CoCreate-app/CoCreate-twilio/commit/0a61b44283c1b0e973119ba00b760ea6f1e1d653))
+
 ## [1.0.19](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.18...v1.0.19) (2021-07-10)
 
 
