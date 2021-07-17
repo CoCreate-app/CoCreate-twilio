@@ -1,3 +1,10 @@
+## [1.0.22](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.21...v1.0.22) (2021-07-17)
+
+
+### Bug Fixes
+
+* workflows ([c7520d5](https://github.com/CoCreate-app/CoCreate-twilio/commit/c7520d5d4c4c7fdbcca00b92e42d8c94d28a80f7))
+
 ## [1.0.21](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.20...v1.0.21) (2021-07-14)
 
 
