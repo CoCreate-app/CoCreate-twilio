@@ -27,12 +27,12 @@
         authToken : <input data-twilio="twilioGetUsage.authToken" required>
         Page size : <input placeholder="10" data-twilio="twilioGetUsage.pagesize" required>
         <br/>
-        <button class="btnsubmit"  data-actions='twilioGetUsage'>Twilio Fetch Usages</button>
+        <button class="btnsubmit"  actions='twilioGetUsage'>Twilio Fetch Usages</button>
     </form>
 
-    <div data-template_id="twilioGetUsage">
+    <div template_id="twilioGetUsage">
          <h4>Twilio Fetch Usages :- </h4>
-        <div class="template margin:10px " data-value="{{data.id}}" data-render_array="data">
+        <div class="template margin:10px " data-value="{{data.id}}" render-array="data">
             <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap" >
                  
                 accountSid : -<h4 class="margin-right:10px" value="{{data.accountSid}}"></h4>

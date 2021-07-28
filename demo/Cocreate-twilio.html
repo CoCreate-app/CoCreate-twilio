@@ -15,11 +15,11 @@
 
     <form>
         <input data-twilio="setUserNameLocalStorage.user_id" value="5ff49ec8421c2c14653a1a39">
-        <button data-actions='setUserNameLocalStorage'>setUserNameLocalStorage</button>
+        <button actions='setUserNameLocalStorage'>setUserNameLocalStorage</button>
     </form>
     <hr>
 
-    <form data-template_id="createCall" data-render_id="render2">
+    <form template_id="createCall" render_id="render2">
         <!--<input data-twilio="dial.To" value="+19418820466">-->
         <input data-twilio="dial.To" value="+13472189814">
         <input data-twilio="dial.From" value="+16027372368">
@@ -46,78 +46,78 @@
         <!--<input data-twilio="holdCall.nameEnqueue" value="support">-->
 
         <br>
-        <button data-actions='createCall'>start Call</button>
-        <!--<button data-actions='holdCall, getConferences' >Hold</button>-->
-        <button data-actions='dialConference, getConferences' data-id="dialConference" style="display:none">Hold</button>
-        <button data-actions='dialEnqueue, getListQueues'>dialEnqueue</button>
-        <button data-actions='answerCall' style="display:none">answerCall</button>
-        <button data-actions='hangupCall'>StopCall</button>
-        <button data-actions='getConferences'>getConferences</button>
-        <button data-actions='getListQueues'>getListQueues</button>
-        <button data-actions='dialTransfer'>dialTransfer (Frankie)</button>
-        <!--            <button data-actions='createConference, '>createConference</button>-->
+        <button actions='createCall'>start Call</button>
+        <!--<button actions='holdCall, getConferences' >Hold</button>-->
+        <button actions='dialConference, getConferences' data-id="dialConference" style="display:none">Hold</button>
+        <button actions='dialEnqueue, getListQueues'>dialEnqueue</button>
+        <button actions='answerCall' style="display:none">answerCall</button>
+        <button actions='hangupCall'>StopCall</button>
+        <button actions='getConferences'>getConferences</button>
+        <button actions='getListQueues'>getListQueues</button>
+        <button actions='dialTransfer'>dialTransfer (Frankie)</button>
+        <!--            <button actions='createConference, '>createConference</button>-->
         <hr>
         <input type="hidden" data-twilio="callRecordingCreate.CallSid" value="{{render2.parameters.CallSid}}">
-        <button data-actions='callRecordingCreate'>Recordingcreate</button>
+        <button actions='callRecordingCreate'>Recordingcreate</button>
         <input type="hidden" data-twilio="callRecordingPause.CallSid" value="{{render2.parameters.CallSid}}">
-        <button data-actions='callRecordingPause'>RecordingPause</button>
+        <button actions='callRecordingPause'>RecordingPause</button>
         <input type="hidden" data-twilio="callRecordingResume.CallSid" value="{{render2.parameters.CallSid}}">
-        <button data-actions='callRecordingResume'>RecordingResume</button>
+        <button actions='callRecordingResume'>RecordingResume</button>
         <input type="hidden" data-twilio="callRecordingList.CallSid" value="{{render2.parameters.CallSid}}">
-        <button data-actions='callRecordingList'>callRecordingList</button>
+        <button actions='callRecordingList'>callRecordingList</button>
 
     </form>
     <form>
         <input data-twilio="dialConference.friendlyName" value="{{render2.parameters.From}}">
         <input data-twilio="dialConference.holdUrl" value="https://server.cocreate.app:8088/twilio/actions_twiml?opt=holdmusic">
-        <button data-actions='dialConference, getConferences' data-id="dialConference">CreateConference</button>
+        <button actions='dialConference, getConferences' data-id="dialConference">CreateConference</button>
     </form>
 
-    <div data-template_id="callRecordingList">
+    <div template_id="callRecordingList">
         <h4>List recordings:- </h4>
-        <div class="template margin:10px;" data-value="{{data.id}}" data-render_array="data">
+        <div class="template margin:10px;" data-value="{{data.id}}" render-array="data">
             <li><a target="_blank" href="{{data.url_public}}" value="{{data.url_public}}"></a></li>
         </div>
     </div>
 
 
-    <div data-template_id="getListQueues">
+    <div template_id="getListQueues">
         <h4>List getListQueues: </h4>
-        <div class="template margin:10px;" data-value="{{data.id}}" data-render_array="data">
+        <div class="template margin:10px;" data-value="{{data.id}}" render-array="data">
             <form class="padding:5px">
                 <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap">
                     <input data-twilio="dialQueue.friendlyName" value="{{data.friendlyName}}">
                     <input data-twilio="deleteQueue.idqueue" value="{{data.idqueue}}">
-                    <button data-actions='dialQueue' data-friendlyName="{{data.friendlyName}}">dialQueue</button>
-                    <button data-actions='deleteQueue' data-friendlyName="{{data.friendlyName}}">deleteQueue</button>
+                    <button actions='dialQueue' data-friendlyName="{{data.friendlyName}}">dialQueue</button>
+                    <button actions='deleteQueue' data-friendlyName="{{data.friendlyName}}">deleteQueue</button>
                 </div>
             </form>
         </div>
     </div>
 
-    <div data-template_id="getConferences">
+    <div template_id="getConferences">
         <h4>List conferences:- </h4>
-        <div class="template margin:10px;" data-value="{{data.id}}" data-render_array="data">
+        <div class="template margin:10px;" data-value="{{data.id}}" render-array="data">
             <form class="padding:5px">
                 <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap">
                     <input data-twilio="joinConference.friendlyName" value="{{data.friendlyName}}">
                     <input type="hidden" data-twilio="endConference.CallSid" value="{{data.idconference}}">
                     <input type="hidden" data-twilio="holdConference.CallSid" value="{{data.idconference}}">
                     <input type="hidden" data-twilio="unholdConference.CallSid" value="{{data.idconference}}">
-                    <button data-actions='holdConference'>hold Conf</button>
-                    <button data-actions='unholdConference'>UnHold Conf</button>
-                    <button data-actions='joinConference' data-friendlyName="{{data.friendlyName}}">Join</button>
-                    <button data-actions='endConference'>Closed</button>
+                    <button actions='holdConference'>hold Conf</button>
+                    <button actions='unholdConference'>UnHold Conf</button>
+                    <button actions='joinConference' data-friendlyName="{{data.friendlyName}}">Join</button>
+                    <button actions='endConference'>Closed</button>
                 </div>
             </form>
             <hr/>
 
-            <div data-template_id="getParticipantsConferences_{{data.idconference}}">
+            <div template_id="getParticipantsConferences_{{data.idconference}}">
                 <form>
                     <input type="hidden" data-twilio="getParticipantsConference.CallSid" value="{{data.idconference}}">
-                    <button data-actions='getParticipantsConference' data-friendlyName="{{data.friendlyName}}" data-idconference="{{data.idconference}}">GetParticipants</button>
+                    <button actions='getParticipantsConference' data-friendlyName="{{data.friendlyName}}" data-idconference="{{data.idconference}}">GetParticipants</button>
                 </form>
-                <div class="template margin:10px;" data-value="{{participant.id}}" data-render_array="participant">
+                <div class="template margin:10px;" data-value="{{participant.id}}" render-array="participant">
                     <form class="padding:5px">
 
                         <input type="hidden" data-twilio="delParticipantsConference.idconference" value="{{participant.conferenceSid}}">
@@ -138,11 +138,11 @@
 
                         <li> <span value="{{participant.call.sid}}"></span> - TO: <span value="{{participant.call.to}}"></span> - from :<span value="{{participant.call.from}}"></span></span>
                         </li>
-                        <button data-actions='muteParticipantsConference' data-idparticipant="{{participant.callSid}}">Mute</button>
-                        <button style="display:none" data-actions='unmuteParticipantsConference' data-idparticipant="{{participant.callSid}}">UnMute</button>
-                        <button data-actions='holdParticipantConference' data-idparticipant="{{participant.callSid}}">HoldParticipante</button>
-                        <button style="display:none" data-actions='unholdParticipantConference' data-idparticipant="{{participant.callSid}}">UnHoldParticipante</button>
-                        <button data-actions='delParticipantsConference'>DElete</button>
+                        <button actions='muteParticipantsConference' data-idparticipant="{{participant.callSid}}">Mute</button>
+                        <button style="display:none" actions='unmuteParticipantsConference' data-idparticipant="{{participant.callSid}}">UnMute</button>
+                        <button actions='holdParticipantConference' data-idparticipant="{{participant.callSid}}">HoldParticipante</button>
+                        <button style="display:none" actions='unholdParticipantConference' data-idparticipant="{{participant.callSid}}">UnHoldParticipante</button>
+                        <button actions='delParticipantsConference'>DElete</button>
                     </form>
                 </div>
             </div>

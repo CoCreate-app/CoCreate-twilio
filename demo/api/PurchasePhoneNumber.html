@@ -46,21 +46,21 @@
             <input type="checkbox" data-twilio="twiliofetchAvailbleNumbers.voiceEnabled" /> voice
             <input type="checkbox" data-twilio="twiliofetchAvailbleNumbers.smsEnabled" /> SMS
             <input type="checkbox" data-twilio="twiliofetchAvailbleNumbers.mmsEnabled" /> MMS
-            <button class="btnsubmit"  data-actions='twiliofetchAvailbleNumbers'>Twilio Fetch Availble Numbers</button>
+            <button class="btnsubmit"  actions='twiliofetchAvailbleNumbers'>Twilio Fetch Availble Numbers</button>
             <a href="./PhoneNumberListIncomming.jean.html">GET ALL incoming numbers in account</a>
         </form>
     
       <!--  <form>
             number: <input placeholder="+15017122661" data-twilio="twilioPurchasePhoneNumber.phoneNumber" required>
             <br/>
-            <button class="btnsubmit"  data-actions='twilioPurchasePhoneNumber'>Twilio Purchase Number</button>
+            <button class="btnsubmit"  actions='twilioPurchasePhoneNumber'>Twilio Purchase Number</button>
         </form>-->
     </div>
 
     
-    <div data-template_id="twiliofetchAvailbleNumbers">
+    <div template_id="twiliofetchAvailbleNumbers">
          <h4>Twilio Availble Numbers :- </h4>
-        <div class="template margin:10px " data-value="{{data.id}}" data-render_array="data">
+        <div class="template margin:10px " data-value="{{data.id}}" render-array="data">
             <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap ">
                 <!--<h3 class="margin-right:10px" value="{{data.phoneNumber}}">phoneNumber></h3>-->
                 <form>
@@ -68,7 +68,7 @@
                     Method: <input placeholder="voiceMethod" value="POST" data-twilio="twilioPurchasePhoneNumber.voiceMethod" required>
                     Incomming Call: <input placeholder="voiceUrl" value="https://server.cocreate.app:8088/twilio/incomming347" data-twilio="twilioPurchasePhoneNumber.voiceUrl" required>
                     <br/>
-                    <button class="btnsubmit"  data-actions='twilioPurchasePhoneNumber'>Twilio Purchase Number</button>
+                    <button class="btnsubmit"  actions='twilioPurchasePhoneNumber'>Twilio Purchase Number</button>
                 </form>
             </div>
             <hr/>

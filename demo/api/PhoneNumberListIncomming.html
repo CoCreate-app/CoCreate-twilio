@@ -25,15 +25,15 @@
     <div style="display: flex;">
         <form>
             <input placeholder="limit" data-twilio="twilioGetIncommingPhoneNumbers.limit" required>
-            <button class="btnsubmit"  data-actions='twilioGetIncommingPhoneNumbers'>Twilio Fetch Numbers in account</button>
+            <button class="btnsubmit"  actions='twilioGetIncommingPhoneNumbers'>Twilio Fetch Numbers in account</button>
         </form>
     
     </div>
 
     
-    <div data-template_id="twilioGetIncommingPhoneNumbers">
+    <div template_id="twilioGetIncommingPhoneNumbers">
          <h4>Twilio Availble Numbers :- </h4>
-        <div class="template margin:10px " data-value="{{data.phoneNumber}}" data-render_array="data">
+        <div class="template margin:10px " data-value="{{data.phoneNumber}}" render-array="data">
             <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap ">
                 <form>
                     <input value="{{data.sid}}" type="hidden" data-twilio="twilioDeletePhoneNumber.sid" required>
@@ -42,8 +42,8 @@
                     <br>Method: <input placeholder="voiceMethod" value="{{data.voiceMethod}}" data-twilio="updateIncomingPhoneNumber.voiceMethod" required>
                     <br>Incomming Call: <input placeholder="voiceUrl" value="{{data.voiceUrl}}" data-twilio="updateIncomingPhoneNumber.voiceUrl" required>
                     <br/>
-                    <button class="btnsubmit"  data-actions='twilioDeletePhoneNumber'>DEL</button>
-                    <button class="btnsubmit"  data-actions='updateIncomingPhoneNumber'>Updated</button>
+                    <button class="btnsubmit"  actions='twilioDeletePhoneNumber'>DEL</button>
+                    <button class="btnsubmit"  actions='updateIncomingPhoneNumber'>Updated</button>
                 </form>
             </div>
             <hr/>

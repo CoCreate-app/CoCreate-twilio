@@ -26,13 +26,13 @@
     <form>
         Sub account SId : <input data-twilio="twilioGetBillingUsages.subaccountSid" required>
         <br/>
-        <button class="btnsubmit"  data-actions='twilioGetBillingUsages'>Twilio Fetch Usages</button>
+        <button class="btnsubmit"  actions='twilioGetBillingUsages'>Twilio Fetch Usages</button>
     </form>
 
 
-    <div data-template_id="twilioGetBillingUsages">
+    <div template_id="twilioGetBillingUsages">
          <h4>Twilio Fetch Usages :- </h4>
-        <div class="template margin:10px " data-value="{{data.id}}" data-render_array="data">
+        <div class="template margin:10px " data-value="{{data.id}}" render-array="data">
             <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap" >
                 
                 category : -<h4 class="margin-right:10px" value=" {{data.category}} "></h3>

@@ -27,13 +27,13 @@
         accountId : <input data-twilio="twilioPhoneNumberList.accountId" required>
         authToken : <input data-twilio="twilioPhoneNumberList.authToken" required>
         <br/>
-        <button class="btnsubmit"  data-actions='twilioPhoneNumberList'>Get Twilio Number List</button>
+        <button class="btnsubmit"  actions='twilioPhoneNumberList'>Get Twilio Number List</button>
     </form>
 
 
-    <div data-template_id="twilioPhoneNumberList">
+    <div template_id="twilioPhoneNumberList">
          <h4>Twilio Phone Numbers List :- </h4>
-        <div class="template margin:10px " data-value="{{data.id}}" data-render_array="data">
+        <div class="template margin:10px " data-value="{{data.id}}" render-array="data">
             <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap ">
                 <h3 class="margin-right:10px" value="{{data.phoneNumber}}">phoneNumber></h3>
             </div>

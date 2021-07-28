@@ -10,15 +10,15 @@
  <head>     
       <h1>List Sub Accounts - Twilio</h1>
   <form>
-    <button data-actions='twilioListSubAccounts'>Click getList</button>
+    <button actions='twilioListSubAccounts'>Click getList</button>
   </form>
 
 
-  <div data-template_id="abc1" data-render_id="render2">
+  <div template_id="abc1" render_id="render2">
     <div class="template card card margin:10px " 
       data-value="{{render2.data._id}}" 
-      data-template_id="abc1" 
-      data-render_array="render2.data">
+      template_id="abc1" 
+      render-array="render2.data">
           <div class="display:flex justify-content:space-between align-items:center width:100%">
             <div class="display:flex">
               <div class="display:flex align-items:center">
@@ -33,11 +33,11 @@
     </div>
   </div>
 
-  <div data-template_id="twilioListSubAccounts" >
+  <div template_id="twilioListSubAccounts" >
     <div class="template card card margin:10px " 
       data-value="{{data._id}}" 
-      data-template_id="twilioListSubAccounts" 
-      data-render_array="data">
+      template_id="twilioListSubAccounts" 
+      render-array="data">
             <div style="display:flex; justify-content:space-between; align-items:center; width:100%">
                 <h4 class="{{status}}" value="status : -{{data.status}}">status</h4>
                 <h4  value="{{data.friendlyName}}">friendlyName</h3>

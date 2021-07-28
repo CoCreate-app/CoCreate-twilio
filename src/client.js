@@ -57,7 +57,7 @@ fetch(URL_TWILIO+'/token/'+user, {
       let  CallSid = myConnection.parameters.CallSid;
       // //document.querySelector("[data-twilio='holdCall.CallSid']").value=CallSid;
       console.log(" Sendind Render to -> createCall",{render2: myConnection})
-      api.render(`[data-template_id=createCall]`, {render2: myConnection});
+      api.render(`[template_id=createCall]`, {render2: myConnection});
     })
     
     device.on('disconnect', (connection)=>{
@@ -81,7 +81,7 @@ fetch(URL_TWILIO+'/token/'+user, {
     });
     device.on('incoming', conn => {
         myConnection = conn
-        document.querySelector("[data-actions='answerCall']").style.display = 'initial'
+        document.querySelector("[actions='answerCall']").style.display = 'initial'
         document.querySelector("[data-id='dialConference']").style.display = 'initial'
         let  CallSid = myConnection.parameters.CallSid
         console.log('incomming => ',CallSid,{render2: myConnection})  
@@ -151,34 +151,34 @@ const CoCreateTwilio = {
 	render_holdParticipantConference: function(data) {
 	  let id_participante = data;
 	  let action = 'holdParticipantConference';
-	  let btn_holdParticipante = document.querySelector('[data-actions="'+action+'"][data-idparticipant="'+id_participante+'"]')
+	  let btn_holdParticipante = document.querySelector('[actions="'+action+'"][data-idparticipant="'+id_participante+'"]')
 	  btn_holdParticipante.style.display = 'none';
-	  let btn_unholdParticipante = document.querySelector('[data-actions="un'+action+'"][data-idparticipant="'+id_participante+'"]')
+	  let btn_unholdParticipante = document.querySelector('[actions="un'+action+'"][data-idparticipant="'+id_participante+'"]')
 	  btn_unholdParticipante.style.display = 'initial';
 
 	},
 	render_unholdParticipantConference: function(data) {
 	  let id_participante = data;
 	  let action = 'holdParticipantConference';
-	  let btn_holdParticipante = document.querySelector('[data-actions="'+action+'"][data-idparticipant="'+id_participante+'"]')
+	  let btn_holdParticipante = document.querySelector('[actions="'+action+'"][data-idparticipant="'+id_participante+'"]')
 	  btn_holdParticipante.style.display = 'initial';
-	  let btn_unholdParticipante = document.querySelector('[data-actions="un'+action+'"][data-idparticipant="'+id_participante+'"]')
+	  let btn_unholdParticipante = document.querySelector('[actions="un'+action+'"][data-idparticipant="'+id_participante+'"]')
 	  btn_unholdParticipante.style.display = 'none';
 	},
 	
 	render_muteParticipantsConference: function(data) {
 	  let id_participante = data;
-	  let btn_mute = document.querySelector('[data-actions="muteParticipantsConference"][data-idparticipant="'+id_participante+'"]')
+	  let btn_mute = document.querySelector('[actions="muteParticipantsConference"][data-idparticipant="'+id_participante+'"]')
 	  btn_mute.style.display = 'none';
-	  let btn_unmute = document.querySelector('[data-actions="unmuteParticipantsConference"][data-idparticipant="'+id_participante+'"]')
+	  let btn_unmute = document.querySelector('[actions="unmuteParticipantsConference"][data-idparticipant="'+id_participante+'"]')
 	  btn_unmute.style.display = 'initial';
 
 	},
 	render_unmuteParticipantsConference: function(data) {
 	  let id_participante = data;
-	  let btn_mute = document.querySelector('[data-actions="muteParticipantsConference"][data-idparticipant="'+id_participante+'"]')
+	  let btn_mute = document.querySelector('[actions="muteParticipantsConference"][data-idparticipant="'+id_participante+'"]')
 	  btn_mute.style.display = 'initial';
-	  let btn_unmute = document.querySelector('[data-actions="unmuteParticipantsConference"][data-idparticipant="'+id_participante+'"]')
+	  let btn_unmute = document.querySelector('[actions="unmuteParticipantsConference"][data-idparticipant="'+id_participante+'"]')
 	  btn_unmute.style.display = 'none';
 	},
 	
