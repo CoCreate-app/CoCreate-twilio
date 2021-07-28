@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.0...v1.1.1) (2021-07-28)
+
+
+### Bug Fixes
+
+* remove data- from fetch, pass and filter ([e29caa2](https://github.com/CoCreate-app/CoCreate-twilio/commit/e29caa2f95a7192d545939e6b149a82fb95b5633))
+
 # [1.1.0](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.22...v1.1.0) (2021-07-28)
 
 
