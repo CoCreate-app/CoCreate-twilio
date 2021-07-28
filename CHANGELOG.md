@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.22...v1.1.0) (2021-07-28)
+
+
+### Features
+
+* add new is{attribute} system and remove data- from attributtes ([23eb1f1](https://github.com/CoCreate-app/CoCreate-twilio/commit/23eb1f1d05992ab3b489069e93cbbe43935312ce))
+
 ## [1.0.22](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.0.21...v1.0.22) (2021-07-17)
 
 
