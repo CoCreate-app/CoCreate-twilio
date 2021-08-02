@@ -1,3 +1,11 @@
+## [1.1.2](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.1...v1.1.2) (2021-08-02)
+
+
+### Bug Fixes
+
+* remove data- from attributes ([b5a2888](https://github.com/CoCreate-app/CoCreate-twilio/commit/b5a28887fdc8fe790395e0e2c5c2dff8a09b94f7))
+* update data-fullscreen to fullscreen ([94c6d8a](https://github.com/CoCreate-app/CoCreate-twilio/commit/94c6d8a4c6f5807bdc88634da743243e72dc5560))
+
 ## [1.1.1](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.0...v1.1.1) (2021-07-28)
 
 
