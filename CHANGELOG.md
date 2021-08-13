@@ -1,3 +1,12 @@
+## [1.1.3](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.2...v1.1.3) (2021-08-13)
+
+
+### Bug Fixes
+
+* remove data- from datatable btns ([eff3029](https://github.com/CoCreate-app/CoCreate-twilio/commit/eff3029c64f81355c022bdb2863b7f3c88696253))
+* replace data-transform with toggle ([e725307](https://github.com/CoCreate-app/CoCreate-twilio/commit/e72530723aabe66d6aef5e4977fba067e264fd84))
+* update to  docs ([8ef0cdf](https://github.com/CoCreate-app/CoCreate-twilio/commit/8ef0cdfc121c88e550a568b15e245e9570002fcc))
+
 ## [1.1.2](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.1...v1.1.2) (2021-08-02)
 
 
