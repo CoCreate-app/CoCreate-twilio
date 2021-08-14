@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.3...v1.1.4) (2021-08-14)
+
+
+### Bug Fixes
+
+* rename data-element_id to element_id ([abcc7c9](https://github.com/CoCreate-app/CoCreate-twilio/commit/abcc7c9d8e2ee8d4f94255b83f299316e4db62d8))
+
 ## [1.1.3](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.2...v1.1.3) (2021-08-13)
 
 
