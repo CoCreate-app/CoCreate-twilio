@@ -1,3 +1,10 @@
+## [1.1.17](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.16...v1.1.17) (2021-09-12)
+
+
+### Bug Fixes
+
+* update sidenav to use resize and toggle ([e978bb9](https://github.com/CoCreate-app/CoCreate-twilio/commit/e978bb9dcfe8ddb808287815c389d9c0d3a752fc))
+
 ## [1.1.16](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.15...v1.1.16) (2021-09-09)
 
 
