@@ -1,3 +1,10 @@
+## [1.1.19](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.18...v1.1.19) (2021-09-14)
+
+
+### Bug Fixes
+
+* add cocreate.app to domains ([5dce040](https://github.com/CoCreate-app/CoCreate-twilio/commit/5dce040b2f19ec1012560769ba3362b45d0d4560))
+
 ## [1.1.18](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.17...v1.1.18) (2021-09-13)
 
 
