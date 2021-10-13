@@ -31,18 +31,18 @@
             <!--<input data-twilio="holdCall.nameEnqueue" value="support">-->
             
             <br>
-            <button data-actions='createCall'>start Call</button>
-            <!--<button data-actions='holdCall, getConferences' >Hold</button>-->
-            <button data-actions='dial.conference, getConferences'>Hold</button>
-            <button data-actions='unholdCall' >UnHold</button>
-            <button data-actions='answerCall' >answerCall</button>
-            <button data-actions='hangupCall'>StopCall</button>
-            <button data-actions='getConferences'>getConferences</button>
-            <button data-actions='createConferences'>getConferences</button>
+            <button actions='createCall'>start Call</button>
+            <!--<button actions='holdCall, getConferences' >Hold</button>-->
+            <button actions='dial.conference, getConferences'>Hold</button>
+            <button actions='unholdCall' >UnHold</button>
+            <button actions='answerCall' >answerCall</button>
+            <button actions='hangupCall'>StopCall</button>
+            <button actions='getConferences'>getConferences</button>
+            <button actions='createConferences'>getConferences</button>
             
             </form>
             
-            <!--<button data-actions='hangupStopCall'>StopCallAll</button>-->
+            <!--<button actions='hangupStopCall'>StopCallAll</button>-->
                 <div data-template_id="getConferences">
                     <h4>List conferences:- </h4>
                     <div class="template margin:10px;"   data-value="{{data.id}}" data-render_array="data">
@@ -52,12 +52,12 @@
                                 <input type="hidden" data-twilio="endConference.CallSid" value="{{data.idconference}}">
                                 <input type="hidden"  data-twilio="holdConference.CallSid" value="{{data.idconference}}">
                                 <input type="hidden"  data-twilio="unholdConference.CallSid" value="{{data.idconference}}">
-                                <button data-actions='holdConference' >hold Conf</button>
-                                <button data-actions='unholdConference' >UnHold Conf</button>
-                                <button data-actions='joinConference' 
+                                <button actions='holdConference' >hold Conf</button>
+                                <button actions='unholdConference' >UnHold Conf</button>
+                                <button actions='joinConference' 
                                                 data-friendlyName="{{data.friendlyName}}"
                                 >Join</button>
-                                <button data-actions='endConference' >Closed</button>
+                                <button actions='endConference' >Closed</button>
                             </div>
                         </form>
                         <hr/>
@@ -65,7 +65,7 @@
                             <div data-template_id="getParticipantsConferences_{{data.idconference}}">
                                 <form>
                                     <input type="hidden"  data-twilio="getParticipantsConference.CallSid" value="{{data.idconference}}">
-                                        <button data-actions='getParticipantsConference' 
+                                        <button actions='getParticipantsConference' 
                                             data-friendlyName="{{data.friendlyName}}"
                                             data-idconference="{{data.idconference}}"
                                         >GetParticipants</button>
@@ -91,23 +91,23 @@
                                         
                                         <li> <span value="{{participant.call.sid}}"></span>  - TO: <span value="{{participant.call.to}}"></span> - from :<span value="{{participant.call.from}}"></span></span></li>
                                         <button 
-                                                data-actions='muteParticipantsConference' 
+                                                actions='muteParticipantsConference' 
                                                 data-idparticipant="{{participant.callSid}}" 
                                         >Mute</button>
                                         <button style="display:none"
-                                                data-actions='unmuteParticipantsConference' 
+                                                actions='unmuteParticipantsConference' 
                                                 data-idparticipant="{{participant.callSid}}"
                                         >UnMute</button>
                                         <button 
-                                                data-actions='holdParticipantConference' 
+                                                actions='holdParticipantConference' 
                                                 data-idparticipant="{{participant.callSid}}" 
                                         >HoldParticipante</button>
                                         <button style="display:none"
-                                                data-actions='unholdParticipantConference' 
+                                                actions='unholdParticipantConference' 
                                                 data-idparticipant="{{participant.callSid}}"
                                         >UnHoldParticipante</button>
                                         <button 
-                                                data-actions='delParticipantsConference'
+                                                actions='delParticipantsConference'
                                         >DElete</button>
                                     </form>
                                 </div>

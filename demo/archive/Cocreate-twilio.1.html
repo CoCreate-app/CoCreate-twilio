@@ -15,16 +15,16 @@
             <input data-twilio="holdCall.url" value="https://server.cocreate.app:8088/twilio/actions_twiml">
             
             <br>
-            <button data-actions='createCall'>start Call</button>
-            <button data-actions='holdCall, getConferences' >Hold</button>
-            <button data-actions='unholdCall' >UnHold</button>
-            <button data-actions='answerCall' >answerCall</button>
-            <button data-actions='hangupCall'>StopCall</button>
-            <button data-actions='getConferences'>getConferences</button>
+            <button actions='createCall'>start Call</button>
+            <button actions='holdCall, getConferences' >Hold</button>
+            <button actions='unholdCall' >UnHold</button>
+            <button actions='answerCall' >answerCall</button>
+            <button actions='hangupCall'>StopCall</button>
+            <button actions='getConferences'>getConferences</button>
             
             </form>
             
-            <!--<button data-actions='hangupStopCall'>StopCallAll</button>-->
+            <!--<button actions='hangupStopCall'>StopCallAll</button>-->
                 <div data-template_id="getConferences">
                     <h4>List conferences:- </h4>
                     <div class="template margin:10px;"   data-value="{{data.id}}" data-render_array="data">
@@ -35,14 +35,14 @@
                                 <input type="hidden"  data-twilio="holdConference.CallSid" value="{{data.idconference}}">
                                 <input type="hidden"  data-twilio="unholdConference.CallSid" value="{{data.idconference}}">
                                 <input type="hidden"  data-twilio="getParticipantsConference.CallSid" value="{{data.idconference}}">
-                                <button data-actions='holdConference' >hold Conf</button>
-                                <button data-actions='unholdConference' >UnHold Conf</button>
-                                <button data-actions='joinConference' 
+                                <button actions='holdConference' >hold Conf</button>
+                                <button actions='unholdConference' >UnHold Conf</button>
+                                <button actions='joinConference' 
                                                 data-friendlyName="{{data.friendlyName}}"
                                 >Join</button>
-                                <button data-actions='endConference' >Closed</button>
+                                <button actions='endConference' >Closed</button>
                                 <div data-template_id="getParticipantsConferences_{{data.idconference}}">
-                                    <button data-actions='getParticipantsConference' 
+                                    <button actions='getParticipantsConference' 
                                                 data-friendlyName="{{data.friendlyName}}"
                                                 data-idconference="{{data.idconference}}"
                                     >GetParticipants</button>
@@ -50,7 +50,7 @@
                                         <input type="text" data-twilio="delParticipantsConference.idconference" value="{{participant.conferenceSid}}">
                                         <input type="text" data-twilio="delParticipantsConference.idparticipant" value="{{participant.callSid}}">
                                         <li value="{{participant.call.sid}} - TO : {{participant.call.to}} - from : {{participant.call.from}}"></li>
-                                        <button data-actions='delParticipantsConference' >DElete</button>
+                                        <button actions='delParticipantsConference' >DElete</button>
                                         idconference
                                     </ul>
                                 </div>
