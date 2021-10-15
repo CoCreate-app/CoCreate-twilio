@@ -1,3 +1,10 @@
+## [1.1.31](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.30...v1.1.31) (2021-10-15)
+
+
+### Bug Fixes
+
+* update packages ([1aa16c9](https://github.com/CoCreate-app/CoCreate-twilio/commit/1aa16c981a66be2013f5896e8f0d7e1ed53e61d8))
+
 ## [1.1.30](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.29...v1.1.30) (2021-10-15)
 
 
