@@ -1,3 +1,10 @@
+## [1.1.33](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.32...v1.1.33) (2021-10-16)
+
+
+### Bug Fixes
+
+* update socket package to fix bug in docs ([6aa4d37](https://github.com/CoCreate-app/CoCreate-twilio/commit/6aa4d37c70ffff1ff4885cdf374225221974da5f))
+
 ## [1.1.32](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.31...v1.1.32) (2021-10-15)
 
 
