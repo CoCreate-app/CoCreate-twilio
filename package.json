@@ -63,7 +63,7 @@
   },
   "dependencies": {
     "@cocreate/api": "^1.2.1",
-    "@cocreate/docs": "^1.2.45",
+    "@cocreate/docs": "^1.2.46",
     "twilio": "^3.60.0",
     "twilio-client-mirror": "0.0.2",
     "util": "^0.12.3"
