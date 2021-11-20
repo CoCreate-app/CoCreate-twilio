@@ -1,3 +1,10 @@
+## [1.1.46](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.45...v1.1.46) (2021-11-20)
+
+
+### Bug Fixes
+
+* updated script tags and link tags ([0ccae9a](https://github.com/CoCreate-app/CoCreate-twilio/commit/0ccae9a233cbfa108d08b90035d6dfafd48e0229))
+
 ## [1.1.45](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.44...v1.1.45) (2021-11-20)
 
 
