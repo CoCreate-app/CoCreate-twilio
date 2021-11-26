@@ -1,3 +1,10 @@
+## [1.1.49](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.48...v1.1.49) (2021-11-26)
+
+
+### Bug Fixes
+
+* docs sidenav width ([57ba4d1](https://github.com/CoCreate-app/CoCreate-twilio/commit/57ba4d1489758143d646982eb2da768d9cfd6f20))
+
 ## [1.1.48](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.47...v1.1.48) (2021-11-26)
 
 
