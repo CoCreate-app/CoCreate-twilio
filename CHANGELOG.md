@@ -1,3 +1,10 @@
+## [1.1.55](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.54...v1.1.55) (2021-12-23)
+
+
+### Bug Fixes
+
+* renamed filter-value_type to filter-value-type ([8966ea6](https://github.com/CoCreate-app/CoCreate-twilio/commit/8966ea62e645bc5068f1bbbcd9b4e48c3fd22bb3))
+
 ## [1.1.54](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.53...v1.1.54) (2021-12-15)
 
 
