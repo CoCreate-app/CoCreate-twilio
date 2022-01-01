@@ -6,13 +6,13 @@
     <body>
         
         <form data-template_id="createCall" data-render_id="render2">
-            <!--<input data-twilio="dial.To" value="+19418820466">-->
-            <input data-twilio="dial.To" value="+13472189814">
-            <input data-twilio="dial.From" value="+16027372368">
-            <input data-twilio="holdCall.CallSid" value="{{render2.parameters.CallSid}}">
-            <input data-twilio="hangupStopCall.CallSid" value="{{render2.parameters.CallSid}}">
-            <input data-twilio="holdCall.nameEnqueue" value="support">
-            <input data-twilio="holdCall.url" value="https://server.cocreate.app:8088/twilio/actions_twiml">
+            <!--<input twilio="dial.To" value="+19418820466">-->
+            <input twilio="dial.To" value="+13472189814">
+            <input twilio="dial.From" value="+16027372368">
+            <input twilio="holdCall.CallSid" value="{{render2.parameters.CallSid}}">
+            <input twilio="hangupStopCall.CallSid" value="{{render2.parameters.CallSid}}">
+            <input twilio="holdCall.nameEnqueue" value="support">
+            <input twilio="holdCall.url" value="https://server.cocreate.app:8088/twilio/actions_twiml">
             
             <br>
             <button actions='createCall'>start Call</button>
@@ -27,14 +27,14 @@
             <!--<button actions='hangupStopCall'>StopCallAll</button>-->
                 <div data-template_id="getConferences">
                     <h4>List conferences:- </h4>
-                    <div class="template margin:10px;"   data-value="{{data.id}}" data-render_array="data">
+                    <div class="template margin:10px;"   value="{{data.id}}" data-render_array="data">
                         <form class="padding:5px">
                             <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap" >
-                                <input data-twilio="joinConference.friendlyName" value="{{data.friendlyName}}">
-                                <input type="hidden" data-twilio="endConference.CallSid" value="{{data.idconference}}">
-                                <input type="hidden"  data-twilio="holdConference.CallSid" value="{{data.idconference}}">
-                                <input type="hidden"  data-twilio="unholdConference.CallSid" value="{{data.idconference}}">
-                                <input type="hidden"  data-twilio="getParticipantsConference.CallSid" value="{{data.idconference}}">
+                                <input twilio="joinConference.friendlyName" value="{{data.friendlyName}}">
+                                <input type="hidden" twilio="endConference.CallSid" value="{{data.idconference}}">
+                                <input type="hidden"  twilio="holdConference.CallSid" value="{{data.idconference}}">
+                                <input type="hidden"  twilio="unholdConference.CallSid" value="{{data.idconference}}">
+                                <input type="hidden"  twilio="getParticipantsConference.CallSid" value="{{data.idconference}}">
                                 <button actions='holdConference' >hold Conf</button>
                                 <button actions='unholdConference' >UnHold Conf</button>
                                 <button actions='joinConference' 
@@ -46,9 +46,9 @@
                                                 data-friendlyName="{{data.friendlyName}}"
                                                 data-idconference="{{data.idconference}}"
                                     >GetParticipants</button>
-                                    <ul class="template margin:10px;"   data-value="{{participant.id}}" data-render_array="participant">
-                                        <input type="text" data-twilio="delParticipantsConference.idconference" value="{{participant.conferenceSid}}">
-                                        <input type="text" data-twilio="delParticipantsConference.idparticipant" value="{{participant.callSid}}">
+                                    <ul class="template margin:10px;"   value="{{participant.id}}" data-render_array="participant">
+                                        <input type="text" twilio="delParticipantsConference.idconference" value="{{participant.conferenceSid}}">
+                                        <input type="text" twilio="delParticipantsConference.idparticipant" value="{{participant.callSid}}">
                                         <li value="{{participant.call.sid}} - TO : {{participant.call.to}} - from : {{participant.call.from}}"></li>
                                         <button actions='delParticipantsConference' >DElete</button>
                                         idconference

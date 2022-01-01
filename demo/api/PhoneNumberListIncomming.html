@@ -24,7 +24,7 @@
     <h1>Twilio Filter Phone Number in Account:- </h1>
     <div style="display: flex;">
         <form>
-            <input placeholder="limit" data-twilio="twilioGetIncommingPhoneNumbers.limit" required>
+            <input placeholder="limit" twilio="twilioGetIncommingPhoneNumbers.limit" required>
             <button class="btnsubmit"  actions='twilioGetIncommingPhoneNumbers'>Twilio Fetch Numbers in account</button>
         </form>
     
@@ -33,14 +33,14 @@
     
     <div template_id="twilioGetIncommingPhoneNumbers">
          <h4>Twilio Availble Numbers :- </h4>
-        <div class="template margin:10px " data-value="{{data.phoneNumber}}" render-array="data">
+        <div class="template margin:10px " value="{{data.phoneNumber}}" render-array="data">
             <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap ">
                 <form>
-                    <input value="{{data.sid}}" type="hidden" data-twilio="twilioDeletePhoneNumber.sid" required>
+                    <input value="{{data.sid}}" type="hidden" twilio="twilioDeletePhoneNumber.sid" required>
                     number: <span value="{{data.phoneNumber}}"></span>
-                    <input value="{{data.sid}}" type="hidden" data-twilio="updateIncomingPhoneNumber.sid" required>
-                    <br>Method: <input placeholder="voiceMethod" value="{{data.voiceMethod}}" data-twilio="updateIncomingPhoneNumber.voiceMethod" required>
-                    <br>Incomming Call: <input placeholder="voiceUrl" value="{{data.voiceUrl}}" data-twilio="updateIncomingPhoneNumber.voiceUrl" required>
+                    <input value="{{data.sid}}" type="hidden" twilio="updateIncomingPhoneNumber.sid" required>
+                    <br>Method: <input placeholder="voiceMethod" value="{{data.voiceMethod}}" twilio="updateIncomingPhoneNumber.voiceMethod" required>
+                    <br>Incomming Call: <input placeholder="voiceUrl" value="{{data.voiceUrl}}" twilio="updateIncomingPhoneNumber.voiceUrl" required>
                     <br/>
                     <button class="btnsubmit"  actions='twilioDeletePhoneNumber'>DEL</button>
                     <button class="btnsubmit"  actions='updateIncomingPhoneNumber'>Updated</button>

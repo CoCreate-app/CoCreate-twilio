@@ -14,8 +14,8 @@ let myStorage = window.localStorage;
 
 let user = myStorage.getItem('user_id') ? myStorage.getItem('user_id') : '5ff49ec8421c2c14653a1a39';
 
-if(document.querySelector('[data-twilio="setUserNameLocalStorage.user_id"]'))
-	document.querySelector('[data-twilio="setUserNameLocalStorage.user_id"]').value=user;
+if(document.querySelector('[twilio="setUserNameLocalStorage.user_id"]'))
+	document.querySelector('[twilio="setUserNameLocalStorage.user_id"]').value=user;
 
 fetch(URL_TWILIO+'/token/'+user, {
 	        'mode': 'cors',
@@ -55,7 +55,7 @@ fetch(URL_TWILIO+'/token/'+user, {
       console.log(" Connect  call Front")
       myConnection = conn;
       let  CallSid = myConnection.parameters.CallSid;
-      // //document.querySelector("[data-twilio='holdCall.CallSid']").value=CallSid;
+      // //document.querySelector("[twilio='holdCall.CallSid']").value=CallSid;
       console.log(" Sendind Render to -> createCall",{render2: myConnection})
       api.render(`[template_id=createCall]`, {render2: myConnection});
     })

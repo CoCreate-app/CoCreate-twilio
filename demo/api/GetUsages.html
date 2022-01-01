@@ -23,16 +23,16 @@
     <h1>Twilio Fetch Usages:- </h1>
 
     <form>
-        accountId : <input data-twilio="twilioGetUsage.accountId" required>
-        authToken : <input data-twilio="twilioGetUsage.authToken" required>
-        Page size : <input placeholder="10" data-twilio="twilioGetUsage.pagesize" required>
+        accountId : <input twilio="twilioGetUsage.accountId" required>
+        authToken : <input twilio="twilioGetUsage.authToken" required>
+        Page size : <input placeholder="10" twilio="twilioGetUsage.pagesize" required>
         <br/>
         <button class="btnsubmit"  actions='twilioGetUsage'>Twilio Fetch Usages</button>
     </form>
 
     <div template_id="twilioGetUsage">
          <h4>Twilio Fetch Usages :- </h4>
-        <div class="template margin:10px " data-value="{{data.id}}" render-array="data">
+        <div class="template margin:10px " value="{{data.id}}" render-array="data">
             <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap" >
                  
                 accountSid : -<h4 class="margin-right:10px" value="{{data.accountSid}}"></h4>

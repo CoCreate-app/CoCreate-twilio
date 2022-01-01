@@ -18,21 +18,21 @@
     <!-- reponse.gather(__props, __param) -->
     
     
-    <div data-twilio="response.gather.__props.input" value="speech dtmf"></div>
-    <div data-twilio="response.gather.__props.timeout" value="3"></div>
-    <div data-twilio="response.gather.__props.numDigits" value="1"></div>
-    <!--<input data-twilio="response.gather.__props.timeout" paceholder="timeout">-->
-    <!--<input data-twilio="response.gather.__props.numDigits" paceholder="numDigits">-->
+    <div twilio="response.gather.__props.input" value="speech dtmf"></div>
+    <div twilio="response.gather.__props.timeout" value="3"></div>
+    <div twilio="response.gather.__props.numDigits" value="1"></div>
+    <!--<input twilio="response.gather.__props.timeout" paceholder="timeout">-->
+    <!--<input twilio="response.gather.__props.numDigits" paceholder="numDigits">-->
     
     
-    <div data-twilio="response.gather.say.__props" paceholder="say">Hello 01-- Say</div>
+    <div twilio="response.gather.say.__props" paceholder="say">Hello 01-- Say</div>
     
     
-    <div data-twilio="response.say" data-twilio_array="say">
-        <div data-twilio="say.__props">Say 1</div>
+    <div twilio="response.say" twilio_array="say">
+        <div twilio="say.__props">Say 1</div>
     </div>
-    <div data-twilio="response.say" data-twilio_array="say">
-        <div data-twilio="say.__props">Say 2</div>
+    <div twilio="response.say" twilio_array="say">
+        <div twilio="say.__props">Say 2</div>
     </div>
     <button actions='response'>response.gather get twiml</button>
 </form>   
