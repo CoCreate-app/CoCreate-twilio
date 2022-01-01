@@ -1,3 +1,10 @@
+## [1.1.57](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.56...v1.1.57) (2022-01-01)
+
+
+### Bug Fixes
+
+* get-value attribute value now supports a selector added # to all values currently in get-value attributes ([a1c16a2](https://github.com/CoCreate-app/CoCreate-twilio/commit/a1c16a26d2da4e10442ae8be5e354fa88e4296fb))
+
 ## [1.1.56](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.55...v1.1.56) (2022-01-01)
 
 
