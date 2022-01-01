@@ -1,3 +1,10 @@
+## [1.1.56](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.55...v1.1.56) (2022-01-01)
+
+
+### Bug Fixes
+
+* removed data- from attributes ([7c37301](https://github.com/CoCreate-app/CoCreate-twilio/commit/7c37301e69339b78f627e94031178d7ef981639d))
+
 ## [1.1.55](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.54...v1.1.55) (2021-12-23)
 
 
