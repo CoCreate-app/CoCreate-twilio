@@ -1,3 +1,10 @@
+## [1.1.58](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.57...v1.1.58) (2022-01-16)
+
+
+### Bug Fixes
+
+* update class overflow:overlay to overflow:auto ([b5258c7](https://github.com/CoCreate-app/CoCreate-twilio/commit/b5258c74a5aadb22a9453b4ab8ef09020e5e15de))
+
 ## [1.1.57](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.56...v1.1.57) (2022-01-01)
 
 
