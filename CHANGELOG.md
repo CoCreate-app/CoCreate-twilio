@@ -1,3 +1,10 @@
+## [1.1.60](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.59...v1.1.60) (2022-02-03)
+
+
+### Bug Fixes
+
+* replaced show and hide class hidden with attribute hidden ([47070e7](https://github.com/CoCreate-app/CoCreate-twilio/commit/47070e7cb8f6d7668a507174a5dab9f0ca7efa84))
+
 ## [1.1.59](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.58...v1.1.59) (2022-02-01)
 
 
