@@ -96,7 +96,7 @@ fetch(URL_TWILIO+'/token/'+user, {
 
 
 const CoCreateTwilio = {
-	id: 'twilio',
+	name: 'twilio',
 	actions: [
 	  'deleteQueue',
 	  'getListQueues',
@@ -230,7 +230,7 @@ const CoCreateTwilio = {
     	myConnection = device.connect(data);
     	let  CallSid = myConnection.parameters.CallSid;
     	console.log("createCall ",myConnection)
-    	api.render(this.id, 'createCall', {render2: myConnection});
+    	api.render(this.name, 'createCall', {render2: myConnection});
 	},
 	
 	action_answerCall: function(element, data) {
@@ -341,7 +341,7 @@ const CoCreateTwilio = {
 	// 	action_twilioListSubAccounts: function(element, data) {
 	// 		//. data rendering by cocreate-render
 	// 		console.log('rander',data)
-	// 	    api.render(this.id, 'xxxCreateCard', {render2: data});
+	// 	    api.render(this.name, 'xxxCreateCard', {render2: data});
 	
 	// 	}
 
@@ -352,7 +352,7 @@ const CoCreateTwilio = {
 }
 
 api.init({
-	name: CoCreateTwilio.id, 
+	name: CoCreateTwilio.name, 
 	module:	CoCreateTwilio,
 });
 
