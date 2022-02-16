@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.62...v1.2.0) (2022-02-16)
+
+
+### Bug Fixes
+
+* update dependencies ([92e9e6e](https://github.com/CoCreate-app/CoCreate-twilio/commit/92e9e6ed2917ea5ef7de9a1c13b7e50f76a686d3))
+
+
+### Features
+
+* define request and response functions, if functions are not deifne defualt functions exist that will request and render results. Reduced and improved code quality ([13ec1f4](https://github.com/CoCreate-app/CoCreate-twilio/commit/13ec1f4d7c09fbaf8e88b9071148413fb165e97c))
+
 ## [1.1.62](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.61...v1.1.62) (2022-02-10)
 
 
