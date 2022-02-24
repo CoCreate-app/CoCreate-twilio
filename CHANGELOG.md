@@ -1,3 +1,11 @@
+## [1.2.1](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.2.0...v1.2.1) (2022-02-24)
+
+
+### Bug Fixes
+
+* CoCreate.config replace CoCreate.app with * ([cbb47e7](https://github.com/CoCreate-app/CoCreate-twilio/commit/cbb47e7096b5d0c4ce010b9e651ccebebc65625c))
+* typo enviroment to environment ([35eeb84](https://github.com/CoCreate-app/CoCreate-twilio/commit/35eeb8420982ed2eaa7ae8b9fa526a51e0570ca5))
+
 # [1.2.0](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.1.62...v1.2.0) (2022-02-16)
 
 
