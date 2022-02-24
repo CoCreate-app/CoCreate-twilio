@@ -8,7 +8,7 @@ class CoCreateTwilio {
 	constructor(wsManager) {
 		this.moduleName = 'twilio';
 		this.wsManager = wsManager;
-		this.enviroment = 'test'; //'test' or 'prod' 
+		this.environment = 'test'; //'test' or 'prod' 
 		this.init();
 	}
 	init() {
@@ -28,9 +28,9 @@ class CoCreateTwilio {
 		let client;
 		try{
 		   let org_data = await api.getOrg(params,this.moduleName);
-		   let enviroment = typeof params['enviroment'] != 'undefined' ? params['enviroment'] : this.enviroment;
-			const accountId =org_data['apis.twilio.'+enviroment+'.twilioAccountId'];//org_data["apis"]["twilio"]["twilioAccountId"];
-    		const authToken = org_data['apis.twilio.'+enviroment+'.twilioAuthToken'];
+		   let environment = typeof params['environment'] != 'undefined' ? params['environment'] : this.environment;
+			const accountId =org_data['apis.twilio.'+environment+'.twilioAccountId'];//org_data["apis"]["twilio"]["twilioAccountId"];
+    		const authToken = org_data['apis.twilio.'+environment+'.twilioAuthToken'];
 			client = require('twilio')(accountId, authToken);
 		  }catch(e){
 			org = 0;
