@@ -353,7 +353,7 @@ const CoCreateTwilio = {
 
 api.init({
 	name: CoCreateTwilio.name, 
-	module:	CoCreateTwilio,
+	component:	CoCreateTwilio,
 });
 
 export default CoCreateTwilio;
