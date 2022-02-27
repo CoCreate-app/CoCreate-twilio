@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.2.1...v1.2.2) (2022-02-27)
+
+
+### Bug Fixes
+
+* update param  module to component ([77c1e3f](https://github.com/CoCreate-app/CoCreate-twilio/commit/77c1e3f752123ef501bb3a242d02ce2c466e8d8f))
+
 ## [1.2.1](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.2.0...v1.2.1) (2022-02-24)
 
 
