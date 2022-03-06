@@ -13,10 +13,10 @@ class CoCreateTwilio {
 	}
 	init() {
 		if (this.wsManager) {
-			this.wsManager.on(this.name,		(socket, data, roomInfo) => this.sendTwilio(socket, data, roomInfo));
+			this.wsManager.on(this.name,		(socket, data, socketInfo) => this.sendTwilio(socket, data, socketInfo));
 		}
 	}
-	async sendTwilio(socket, data, roomInfo) {
+	async sendTwilio(socket, data, socketInfo) {
 		let data_original = {...data["data"]};
 		let that = this;
 		let send_response ='twilio';
@@ -97,7 +97,7 @@ class CoCreateTwilio {
 					//create conference
 					data_original["transfer_call"] = true;
 					api.send_response(that.wsManager, socket, {"type":type,"response":data_original}, send_response);
-					that.wsManager.onMessage(socket, 'createDocument', data /* it will be request data */, roomInfo);
+					that.wsManager.onMessage(socket, 'createDocument', data /* it will be request data */, socketInfo);
 				}
 			break;
 			case 'dialEnqueue':
