@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.2.2...v1.2.3) (2022-03-07)
+
+
+### Bug Fixes
+
+* update param roomInfo to socketInfo ([f926cc1](https://github.com/CoCreate-app/CoCreate-twilio/commit/f926cc1e0e1fab14f6d0f75cbcee01d4392fdfea))
+
 ## [1.2.2](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.2.1...v1.2.2) (2022-02-27)
 
 
