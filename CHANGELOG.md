@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.2.3...v1.2.4) (2022-04-15)
+
+
+### Bug Fixes
+
+* removed [] from placeholder {{...}} ([f05d76d](https://github.com/CoCreate-app/CoCreate-twilio/commit/f05d76d868866aeb1ea569030e13602794d81740))
+
 ## [1.2.3](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.2.2...v1.2.3) (2022-03-07)
 
 
