@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.2.4...v1.2.5) (2022-05-06)
+
+
+### Bug Fixes
+
+* update config organization_Id to organization_id ([222ec1f](https://github.com/CoCreate-app/CoCreate-twilio/commit/222ec1f55e47e0056a14035f0443aa15a47c833f))
+
 ## [1.2.4](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.2.3...v1.2.4) (2022-04-15)
 
 
