@@ -1,3 +1,10 @@
+## [1.2.6](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.2.5...v1.2.6) (2022-05-19)
+
+
+### Bug Fixes
+
+* update document_id on link index.css ([7a06627](https://github.com/CoCreate-app/CoCreate-twilio/commit/7a0662718c72682696b150e996d5e669186556e2))
+
 ## [1.2.5](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.2.4...v1.2.5) (2022-05-06)
 
 
