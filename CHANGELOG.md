@@ -1,3 +1,10 @@
+## [1.2.8](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.2.7...v1.2.8) (2022-06-02)
+
+
+### Bug Fixes
+
+* update padding of datables td element ([d384149](https://github.com/CoCreate-app/CoCreate-twilio/commit/d384149fe9b228cf67033c325e0a1618df9a5649))
+
 ## [1.2.7](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.2.6...v1.2.7) (2022-05-23)
 
 
