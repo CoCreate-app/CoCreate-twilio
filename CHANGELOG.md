@@ -1,3 +1,12 @@
+## [1.2.9](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.2.8...v1.2.9) (2022-06-12)
+
+
+### Bug Fixes
+
+* update dependencies ([7f243d7](https://github.com/CoCreate-app/CoCreate-twilio/commit/7f243d7cb4a729ecd897783709694072c1aabb9c))
+* update docs css document_id ([6e2499c](https://github.com/CoCreate-app/CoCreate-twilio/commit/6e2499c3cfcacc7be9dbae889b3f9018ab26e2e7))
+* update modal btn to actions ([e428034](https://github.com/CoCreate-app/CoCreate-twilio/commit/e4280349b776da64df0221b240cd9cc53c9aa2d4))
+
 ## [1.2.8](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.2.7...v1.2.8) (2022-06-02)
 
 
