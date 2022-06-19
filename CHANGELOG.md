@@ -1,3 +1,10 @@
+## [1.2.11](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.2.10...v1.2.11) (2022-06-19)
+
+
+### Bug Fixes
+
+* update templates to use placeholder ([f944593](https://github.com/CoCreate-app/CoCreate-twilio/commit/f9445932eef0152f5e9fc5389b2db25138a111a7))
+
 ## [1.2.10](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.2.9...v1.2.10) (2022-06-18)
 
 
