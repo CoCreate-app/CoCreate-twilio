@@ -1,3 +1,10 @@
+## [1.2.12](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.2.11...v1.2.12) (2022-08-19)
+
+
+### Bug Fixes
+
+* renamed order-by and order-type to filter-order-name and filter-order-type ([f7dd0ff](https://github.com/CoCreate-app/CoCreate-twilio/commit/f7dd0ff142dac4c5e535f3d7b8fc14bc4016d011))
+
 ## [1.2.11](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.2.10...v1.2.11) (2022-06-19)
 
 
