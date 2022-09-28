@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.2.13...v1.3.0) (2022-09-28)
+
+
+### Features
+
+* config is accessible from socket.config ([2355292](https://github.com/CoCreate-app/CoCreate-twilio/commit/23552925484726767a45a7d30cdd0a1bcbb93b16))
+
 ## [1.2.13](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.2.12...v1.2.13) (2022-09-01)
 
 
