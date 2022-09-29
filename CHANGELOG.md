@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.3.0...v1.3.1) (2022-09-29)
+
+
+### Bug Fixes
+
+* config renameed to CoCreateConfig ([bb82c3e](https://github.com/CoCreate-app/CoCreate-twilio/commit/bb82c3eb5fab784ed5f2a70280ec3232bac72845))
+
 # [1.3.0](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.2.13...v1.3.0) (2022-09-28)
 
 
