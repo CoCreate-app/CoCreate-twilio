@@ -1,3 +1,10 @@
+## [1.3.8](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.3.7...v1.3.8) (2022-10-02)
+
+
+### Bug Fixes
+
+* bump @cocreate/hosting and @cocreate/socket-client ([04ac302](https://github.com/CoCreate-app/CoCreate-twilio/commit/04ac302b2b81e655c48d90bdc312644fef8486e7))
+
 ## [1.3.7](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.3.6...v1.3.7) (2022-10-01)
 
 
