@@ -197,8 +197,8 @@
 											modal-width="320px" 
 											modal-color="#229954"
 											modal-header="false">
-										<h4>From:<span collection="{{collection}}" document_id="{{data._id}}" name="From">From</span></h4>
-										<h5 collection="{{collection}}" document_id="{{data._id}}" name="status">Status</h5>
+										<h4>From:<span collection="{{document.collection}}" document_id="{{data._id}}" name="From">From</span></h4>
+										<h5 collection="{{document.collection}}" document_id="{{data._id}}" name="status">Status</h5>
 										<div pass-collection="modules"
 											pass-document_id="{{data._id}}"
 											pass_to="form-fields">
@@ -217,8 +217,8 @@
 									modal-width="320px" 
 									modal-color="#229954"
 									modal-header="false">
-								<h4>To: <span collection="{{collection}}" document_id="{{data._id}}" name="To">To</span></h4>
-								<b collection="{{collection}}" document_id="{{data._id}}" name="CallStatus">CallStatus</b>
+								<h4>To: <span collection="{{document.collection}}" document_id="{{data._id}}" name="To">To</span></h4>
+								<b collection="{{document.collection}}" document_id="{{data._id}}" name="CallStatus">CallStatus</b>
 								<div pass-collection="modules"
 									pass-document_id="{{data._id}}"
 									pass_to="form-fields">
@@ -234,8 +234,8 @@
 									modal-width="320px" 
 									modal-color="#229954"
 									modal-header="false">
-								<h4>Direction:<span collection="{{collection}}" document_id="{{data._id}}" name="Direction">Direction</span></h4>
-								<h4>direction:<span collection="{{collection}}" document_id="{{data._id}}" name="direction">direction</span></h4>
+								<h4>Direction:<span collection="{{document.collection}}" document_id="{{data._id}}" name="Direction">Direction</span></h4>
+								<h4>direction:<span collection="{{document.collection}}" document_id="{{data._id}}" name="direction">direction</span></h4>
 								<div pass-collection="modules"
 									pass-document_id="{{data._id}}"
 									pass_to="form-fields">
@@ -251,7 +251,7 @@
 									modal-width="320px" 
 									modal-color="#229954"
 									modal-header="false">
-								<b collection="{{collection}}" document_id="{{data._id}}" name="duration">Duration</b>
+								<b collection="{{document.collection}}" document_id="{{data._id}}" name="duration">Duration</b>
 								<div pass-collection="modules"
 									pass-document_id="{{data._id}}"
 									pass_to="form-fields">
@@ -267,7 +267,7 @@
 									modal-width="320px" 
 									modal-color="#229954"
 									modal-header="false">
-								<b collection="{{collection}}" document_id="{{data._id}}" name="CallSid">CallSid</b>
+								<b collection="{{document.collection}}" document_id="{{data._id}}" name="CallSid">CallSid</b>
 								<div pass-collection="modules"
 									pass-document_id="{{data._id}}"
 									pass_to="form-fields">
