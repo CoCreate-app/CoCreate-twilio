@@ -10,7 +10,7 @@ module.exports = {
             "collection": "files",
             "document_id": "6029b6a3e979fb17407e25dc",
             "key": "src",
-            "data":{
+            "document": {
                 "name": "index.html",
                 "path": "/docs/twilio/index.html",
                 "domains": [
