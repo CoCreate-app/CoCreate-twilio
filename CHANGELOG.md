@@ -1,3 +1,10 @@
+## [1.3.13](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.3.12...v1.3.13) (2022-11-21)
+
+
+### Bug Fixes
+
+* replaced document_id with document._id ([865c7e2](https://github.com/CoCreate-app/CoCreate-twilio/commit/865c7e2aec299331a10d376e0cadffc103088346))
+
 ## [1.3.12](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.3.11...v1.3.12) (2022-11-21)
 
 
