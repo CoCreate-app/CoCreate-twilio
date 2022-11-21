@@ -1,3 +1,11 @@
+## [1.3.10](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.3.9...v1.3.10) (2022-11-21)
+
+
+### Bug Fixes
+
+* filter-order attributes renamed to filter-sort ([aed719f](https://github.com/CoCreate-app/CoCreate-twilio/commit/aed719f3257edbe07f1e0ed8dd559fbdd7c3c927))
+* renamed {{data.key}} to {{document.key}} ([2673cb1](https://github.com/CoCreate-app/CoCreate-twilio/commit/2673cb16ca51f7e6e2c8661840664aa2959b187e))
+
 ## [1.3.9](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.3.8...v1.3.9) (2022-10-02)
 
 
