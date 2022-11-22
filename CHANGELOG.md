@@ -1,3 +1,10 @@
+## [1.3.15](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.3.14...v1.3.15) (2022-11-22)
+
+
+### Bug Fixes
+
+* apply src: {{source}} to CoCreate.config ([06d8294](https://github.com/CoCreate-app/CoCreate-twilio/commit/06d82946a9ed9ffb8cae7cc8ebfbc7ad1d02a29f))
+
 ## [1.3.14](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.3.13...v1.3.14) (2022-11-21)
 
 
