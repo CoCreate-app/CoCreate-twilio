@@ -78,10 +78,10 @@ class CoCreateTwilio {
 				try{
 					data_original["transfer_call"] = false;
 					let CallSid = data_original.data.CallSid;
-					if(!CallSid){
+					if (!CallSid){
 						throw "NoExisteCallSid";
 					}
-					if(CallSid != undefined){
+					if (CallSid != undefined){
 						client.calls(CallSid)
 						.fetch()
 						.then(async call => {
@@ -104,7 +104,7 @@ class CoCreateTwilio {
 				let waitUrl = data_original.data.waitUrl ? data_original.data.waitUrl : url_twilio +'?opt=holdmusic' ; 
 				let CallSid = data_original.data.CallSid;
 				let nameEnqueue = data_original.data.nameEnqueue;
-				if(CallSid != undefined){
+				if (CallSid != undefined){
 				twiml.enqueue({
 						waitUrl: waitUrl,
 						waitUrlMethod : 'GET'
@@ -140,10 +140,10 @@ class CoCreateTwilio {
 				try{
 					data_original["create_conference"] = false;
 					let CallSid = data_original.data.CallSid
-					if(!CallSid){
+					if (!CallSid){
 						throw "NoExisteCallSid";
 					}
-					if(CallSid != undefined){
+					if (CallSid != undefined){
 						client.calls(CallSid)
 						.fetch()
 						.then(async call => {
@@ -288,10 +288,10 @@ class CoCreateTwilio {
 				try{
 					data_original["create_conference"] = false;
 						let CallSid = data_original.data.CallSid
-						if(!CallSid){
+						if (!CallSid){
 							throw "NoExisteCallSid";
 						}
-						if(CallSid != undefined){
+						if (CallSid != undefined){
 							client.calls(CallSid)
 							.fetch()
 							.then(async call => {

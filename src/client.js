@@ -14,7 +14,7 @@ let myStorage = window.localStorage;
 
 let user = myStorage.getItem('user_id') ? myStorage.getItem('user_id') : '5ff49ec8421c2c14653a1a39';
 
-if(document.querySelector('[twilio="setUserNameLocalStorage.user_id"]'))
+if (document.querySelector('[twilio="setUserNameLocalStorage.user_id"]'))
 	document.querySelector('[twilio="setUserNameLocalStorage.user_id"]').value=user;
 
 fetch(URL_TWILIO+'/token/'+user, {
@@ -198,7 +198,7 @@ const CoCreateTwilio = {
 	
 	render_dialConference: async function(data) {
 		console.log("Dial",data)
-		if(data.create_conference){
+		if (data.create_conference){
 			//createConference
 			let friendlyName = data.data.friendlyName ? data.data.friendlyName : 'CocreateConference'
 			console.log("friendlyName ",friendlyName)
