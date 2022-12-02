@@ -1,3 +1,10 @@
+## [1.3.25](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.3.24...v1.3.25) (2022-12-02)
+
+
+### Bug Fixes
+
+* docs ([15e12c7](https://github.com/CoCreate-app/CoCreate-twilio/commit/15e12c7841381482945b09ebab2a9b70c9891386))
+
 ## [1.3.24](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.3.23...v1.3.24) (2022-12-02)
 
 
