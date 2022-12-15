@@ -1,3 +1,10 @@
+## [1.3.34](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.3.33...v1.3.34) (2022-12-15)
+
+
+### Bug Fixes
+
+* add missing dev dependency style-loader ([0305ef7](https://github.com/CoCreate-app/CoCreate-twilio/commit/0305ef7c1e2eeb1ed0bbe3e172c9d80c908dc342))
+
 ## [1.3.33](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.3.32...v1.3.33) (2022-12-13)
 
 
