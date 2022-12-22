@@ -22,58 +22,47 @@
             <button actions='hangupCall'>StopCall</button>
             <button actions='getConferences'>getConferences</button>
             
-            </form>
+        </form>
             
-            <!--<button actions='hangupStopCall'>StopCallAll</button>-->
-                <div data-template_id="getConferences">
-                    <h4>List conferences:- </h4>
-                    <div class="template margin:10px;"   value="{{data.id}}" data-render_array="data">
-                        <form class="padding:5px">
-                            <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap" >
-                                <input twilio="joinConference.friendlyName" value="{{data.friendlyName}}">
-                                <input type="hidden" twilio="endConference.CallSid" value="{{data.idconference}}">
-                                <input type="hidden"  twilio="holdConference.CallSid" value="{{data.idconference}}">
-                                <input type="hidden"  twilio="unholdConference.CallSid" value="{{data.idconference}}">
-                                <input type="hidden"  twilio="getParticipantsConference.CallSid" value="{{data.idconference}}">
-                                <button actions='holdConference' >hold Conf</button>
-                                <button actions='unholdConference' >UnHold Conf</button>
-                                <button actions='joinConference' 
-                                                data-friendlyName="{{data.friendlyName}}"
-                                >Join</button>
-                                <button actions='endConference' >Closed</button>
-                                <div data-template_id="getParticipantsConferences_{{data.idconference}}">
-                                    <button actions='getParticipantsConference' 
-                                                data-friendlyName="{{data.friendlyName}}"
-                                                data-idconference="{{data.idconference}}"
-                                    >GetParticipants</button>
-                                    <ul class="template margin:10px;"   value="{{participant.id}}" data-render_array="participant">
-                                        <input type="text" twilio="delParticipantsConference.idconference" value="{{participant.conferenceSid}}">
-                                        <input type="text" twilio="delParticipantsConference.idparticipant" value="{{participant.callSid}}">
-                                        <li value="{{participant.call.sid}} - TO : {{participant.call.to}} - from : {{participant.call.from}}"></li>
-                                        <button actions='delParticipantsConference' >DElete</button>
-                                        idconference
-                                    </ul>
-                                </div>
-                            </div>
-                        </form>
-                        <hr/>
+        <!--<button actions='hangupStopCall'>StopCallAll</button>-->
+        <div data-template_id="getConferences">
+            <h4>List conferences:- </h4>
+            <div class="template margin:10px;"   value="{{data.id}}" data-render_array="data">
+                <form class="padding:5px">
+                    <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap" >
+                        <input twilio="joinConference.friendlyName" value="{{data.friendlyName}}">
+                        <input type="hidden" twilio="endConference.CallSid" value="{{data.idconference}}">
+                        <input type="hidden"  twilio="holdConference.CallSid" value="{{data.idconference}}">
+                        <input type="hidden"  twilio="unholdConference.CallSid" value="{{data.idconference}}">
+                        <input type="hidden"  twilio="getParticipantsConference.CallSid" value="{{data.idconference}}">
+                        <button actions='holdConference' >hold Conf</button>
+                        <button actions='unholdConference' >UnHold Conf</button>
+                        <button actions='joinConference' 
+                                        data-friendlyName="{{data.friendlyName}}"
+                        >Join</button>
+                        <button actions='endConference' >Closed</button>
+                        <div data-template_id="getParticipantsConferences_{{data.idconference}}">
+                            <button actions='getParticipantsConference' 
+                                        data-friendlyName="{{data.friendlyName}}"
+                                        data-idconference="{{data.idconference}}"
+                            >GetParticipants</button>
+                            <ul class="template margin:10px;"   value="{{participant.id}}" data-render_array="participant">
+                                <input type="text" twilio="delParticipantsConference.idconference" value="{{participant.conferenceSid}}">
+                                <input type="text" twilio="delParticipantsConference.idparticipant" value="{{participant.callSid}}">
+                                <li value="{{participant.call.sid}} - TO : {{participant.call.to}} - from : {{participant.call.from}}"></li>
+                                <button actions='delParticipantsConference' >DElete</button>
+                                idconference
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                        
+                </form>
+                <hr/>
+            </div>
+        </div>
+            
+        <!--CoCreateJS-->
+        <script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>
+        <!-- <script src="../dist/CoCreate-twilio.js"></script> -->
+
     </body>
 </html>
-
-
-<script>
-var CoCreateConfig = {
-      apiKey: 'c2b08663-06e3-440c-ef6f-13978b42883a',
-            organization_id: '5ff747727005da1c272740ab'
-}
-
-</script>
-<!--CoCreateJS-->
-<!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>-->
-<!--CoCreate Plugins-->
-
-<script type="text/javascript" src="https://server.cocreate.app:8088/js/twilio.min.js"></script>
-<script src="../dist/CoCreate-twilio.js"></script>
