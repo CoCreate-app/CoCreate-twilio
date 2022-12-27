@@ -1,3 +1,11 @@
+## [1.3.41](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.3.40...v1.3.41) (2022-12-27)
+
+
+### Bug Fixes
+
+* bump dependencies ([56d979e](https://github.com/CoCreate-app/CoCreate-twilio/commit/56d979e36d8d9187e3a2776b08fb9a237cc92258))
+* modal href updated to modal-src ([b61421c](https://github.com/CoCreate-app/CoCreate-twilio/commit/b61421cef8a50f3113d8032d75e3e43be34afd0b))
+
 ## [1.3.40](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.3.39...v1.3.40) (2022-12-25)
 
 
