@@ -1,3 +1,10 @@
+## [1.3.43](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.3.42...v1.3.43) (2022-12-30)
+
+
+### Bug Fixes
+
+* update config sources to use template  braces with entry on src ([7f84dfd](https://github.com/CoCreate-app/CoCreate-twilio/commit/7f84dfd65df03324228d487e9fef14af2caadb87))
+
 ## [1.3.42](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.3.41...v1.3.42) (2022-12-29)
 
 
