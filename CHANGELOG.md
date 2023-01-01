@@ -1,3 +1,10 @@
+## [1.3.45](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.3.44...v1.3.45) (2023-01-01)
+
+
+### Bug Fixes
+
+* docs sanbox overflow ([239d717](https://github.com/CoCreate-app/CoCreate-twilio/commit/239d717b9aaddff2d02a885cc0ea4b8a4157aa25))
+
 ## [1.3.44](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.3.43...v1.3.44) (2022-12-31)
 
 
