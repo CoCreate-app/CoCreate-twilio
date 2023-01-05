@@ -1,3 +1,11 @@
+## [1.3.46](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.3.45...v1.3.46) (2023-01-05)
+
+
+### Bug Fixes
+
+* bump cdn to 1.39.4 ([8efd75a](https://github.com/CoCreate-app/CoCreate-twilio/commit/8efd75a8640bd67b054a01b17a0013fe71243b15))
+* bump dependencies ([4e7b4b2](https://github.com/CoCreate-app/CoCreate-twilio/commit/4e7b4b213ea37ca73dcb98aeb958005f96757853))
+
 ## [1.3.45](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.3.44...v1.3.45) (2023-01-01)
 
 
