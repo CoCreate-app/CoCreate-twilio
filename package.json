@@ -57,7 +57,7 @@
     "webpack-log": "^3.0.2"
   },
   "dependencies": {
-    "@cocreate/api": "^1.6.6",
+    "@cocreate/api": "^1.6.7",
     "@cocreate/docs": "^1.5.9",
     "twilio": "^3.60.0",
     "twilio-client-mirror": "0.0.2",
