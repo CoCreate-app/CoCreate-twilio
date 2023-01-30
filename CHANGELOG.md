@@ -1,3 +1,10 @@
+## [1.3.54](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.3.53...v1.3.54) (2023-01-30)
+
+
+### Bug Fixes
+
+* bump dependencies ([7e63c05](https://github.com/CoCreate-app/CoCreate-twilio/commit/7e63c05ab53e8cd9db2f8973dae2bb6ffb116e82))
+
 ## [1.3.53](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.3.52...v1.3.53) (2023-01-29)
 
 
