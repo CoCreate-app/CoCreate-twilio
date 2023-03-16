@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.3.56...v1.4.0) (2023-03-16)
+
+
+### Features
+
+* replaced get-value and set-value with a super charged version of CoCreate-events ([d7fa233](https://github.com/CoCreate-app/CoCreate-twilio/commit/d7fa2339119af4877923a5f8e4d2c7c2ef3149d2))
+
 ## [1.3.56](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.3.55...v1.3.56) (2023-02-01)
 
 
