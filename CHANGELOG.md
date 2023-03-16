@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.4.1...v1.4.2) (2023-03-16)
+
+
+### Bug Fixes
+
+* updated filter-sort-direction ([1627949](https://github.com/CoCreate-app/CoCreate-twilio/commit/16279496d15c584d5bf7e38f18d64e1b5b51a64d))
+
 ## [1.4.1](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.4.0...v1.4.1) (2023-03-16)
 
 
