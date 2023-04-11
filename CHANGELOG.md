@@ -1,3 +1,10 @@
+## [1.4.5](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.4.4...v1.4.5) (2023-04-11)
+
+
+### Bug Fixes
+
+* renamed domains to hosts ([e4d7b0c](https://github.com/CoCreate-app/CoCreate-twilio/commit/e4d7b0caf8e9b16327ac65d3c00096d319981081))
+
 ## [1.4.4](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.4.3...v1.4.4) (2023-03-30)
 
 
