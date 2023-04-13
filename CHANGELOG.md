@@ -1,3 +1,10 @@
+## [1.4.8](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.4.7...v1.4.8) (2023-04-13)
+
+
+### Bug Fixes
+
+* api getData is now an object ([6ff2387](https://github.com/CoCreate-app/CoCreate-twilio/commit/6ff2387e71cd453df307c26058cd176e082d3255))
+
 ## [1.4.7](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.4.6...v1.4.7) (2023-04-11)
 
 
