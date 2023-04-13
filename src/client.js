@@ -225,7 +225,7 @@ const CoCreateTwilio = {
 	},
 	
 	action_createCall: function(element, data) {
-		var data = api.getFormData('twilio', 'dial', document)
+		var data = api.getData({name: 'twilio', endPoint: 'dial', form: document})
 		console.log("createCall ",data)
     	myConnection = device.connect(data);
     	let  CallSid = myConnection.parameters.CallSid;
@@ -240,7 +240,7 @@ const CoCreateTwilio = {
 	action_dialQueue: async function(element, data) {
 	  //alert('unhold')
 	  //myConnection = device.connect({'unhold':true,'queue':'support'});
-	  /*var data = api.getFormData('twilio', 'dialQueue', element)
+	  /*var data = api.getData({name: 'twilio', endPoint: 'dialQueue', form: element})
 	  console.log("dialQueue",data)
 	  */
 	  console.log("dialQueue ",element.dataset['friendlyname'])
@@ -257,13 +257,13 @@ const CoCreateTwilio = {
 	},
 	
 	action_unholdCall: function(element, data) {
-	  var data = api.getFormData('twilio', 'holdCall', document)
+	  var data = api.getData({ name: 'twilio', endPoint: 'holdCall', form: document})
 	  data["unhold"]=true;
 	  console.log(" DAta unhold ",data)
 	  myConnection = device.connect(data);
 	},
 	action_setUserNameLocalStorage: function(element, data) {
-		var data = api.getFormData('twilio', 'setUserNameLocalStorage', document)
+		var data = api.getData({name: 'twilio', endPoint: 'setUserNameLocalStorage', form: document})
 		myStorage.setItem('user_id',data['user_id']);
 	},
 
