@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.0...v1.5.1) (2023-04-24)
+
+
+### Bug Fixes
+
+* removed uglifyjs-webpack-plugin ([d2cdf59](https://github.com/CoCreate-app/CoCreate-twilio/commit/d2cdf59648a610debb3aaffc58aa5c07d39915ae))
+
 # [1.5.0](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.4.8...v1.5.0) (2023-04-24)
 
 
