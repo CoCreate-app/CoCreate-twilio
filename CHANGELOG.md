@@ -1,3 +1,10 @@
+## [1.5.4](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.3...v1.5.4) (2023-04-24)
+
+
+### Bug Fixes
+
+* updated worrkflows to v3 and node version 16 ([ac68967](https://github.com/CoCreate-app/CoCreate-twilio/commit/ac6896727e2326ccd0685c4c52bf8dcf7a0b59e8))
+
 ## [1.5.3](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.2...v1.5.3) (2023-04-24)
 
 
