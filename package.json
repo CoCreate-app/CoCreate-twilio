@@ -55,7 +55,6 @@
     "style-loader": "^3.3.1",
     "terser-webpack-plugin": "^5.1.1",
     "twilio-client": "^1.14.0",
-    "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^5.26.3",
     "webpack-cli": "^4.5.0",
     "webpack-log": "^3.0.2"
