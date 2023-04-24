@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.4.8...v1.5.0) (2023-04-24)
+
+
+### Features
+
+* added pwa manifest ([5d73ecc](https://github.com/CoCreate-app/CoCreate-twilio/commit/5d73ecccf900a60442029f34d24c1e6f91cc67e0))
+
 ## [1.4.8](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.4.7...v1.4.8) (2023-04-13)
 
 
