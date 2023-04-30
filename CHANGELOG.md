@@ -1,3 +1,12 @@
+## [1.5.5](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.4...v1.5.5) (2023-04-30)
+
+
+### Bug Fixes
+
+* fullscreen target updated to fullscreen fullscreen-target ([dfbce27](https://github.com/CoCreate-app/CoCreate-twilio/commit/dfbce27b49b757cc689ccf7316f86df26340ca65))
+* package-lock.json and pnpm-lock.yaml added to .gitignore ([703e210](https://github.com/CoCreate-app/CoCreate-twilio/commit/703e210392e3b3b34f3799b71bde2fd8e9f41a31))
+* removed toogle fullscreen icons. now using css content ([1938d7a](https://github.com/CoCreate-app/CoCreate-twilio/commit/1938d7a8eaa4ec9ee51091800db4c17c9367fb43))
+
 ## [1.5.4](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.3...v1.5.4) (2023-04-24)
 
 
