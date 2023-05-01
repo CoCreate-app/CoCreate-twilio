@@ -1,3 +1,10 @@
+## [1.5.7](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.6...v1.5.7) (2023-05-01)
+
+
+### Bug Fixes
+
+* update manifest.json to manifest.webmanifest ([05b760a](https://github.com/CoCreate-app/CoCreate-twilio/commit/05b760a129717d2764b59d13ff9970cd91ca60b4))
+
 ## [1.5.6](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.5...v1.5.6) (2023-05-01)
 
 
