@@ -1,3 +1,11 @@
+## [1.5.9](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.8...v1.5.9) (2023-05-06)
+
+
+### Bug Fixes
+
+* bump [@cocreate](https://github.com/cocreate) dependencies ([bf696bc](https://github.com/CoCreate-app/CoCreate-twilio/commit/bf696bcea155a130a2eefd3a6095e94919ed1a8c))
+* filter-sort icon ([cf186cf](https://github.com/CoCreate-app/CoCreate-twilio/commit/cf186cf2570f0d3f3df84fcabee2fe3aa95f5202))
+
 ## [1.5.8](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.7...v1.5.8) (2023-05-01)
 
 
