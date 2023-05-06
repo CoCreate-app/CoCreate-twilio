@@ -1,3 +1,10 @@
+## [1.5.8](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.7...v1.5.8) (2023-05-01)
+
+
+### Bug Fixes
+
+* replaced icon toggles with new svg ([4070186](https://github.com/CoCreate-app/CoCreate-twilio/commit/4070186855f15d4f8949f7431f04c7cfc53c8937))
+
 ## [1.5.7](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.6...v1.5.7) (2023-05-01)
 
 
