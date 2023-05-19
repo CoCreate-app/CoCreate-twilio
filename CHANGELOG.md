@@ -1,3 +1,11 @@
+## [1.5.10](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.9...v1.5.10) (2023-05-19)
+
+
+### Bug Fixes
+
+* apikey renamed to key ([dbee688](https://github.com/CoCreate-app/CoCreate-twilio/commit/dbee68840b7a23002ebd3bd6080250df1690d233))
+* update packages to latest version. This commit updates various packages in the dependencies section of the package.json file to their latest published versions, thereby fixing multiple bugs and improving overall performance. ([c81c30c](https://github.com/CoCreate-app/CoCreate-twilio/commit/c81c30cb67032b00b086ac869fd745def21ce953))
+
 ## [1.5.9](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.8...v1.5.9) (2023-05-06)
 
 
