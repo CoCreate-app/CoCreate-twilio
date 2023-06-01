@@ -1,61 +1,74 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Twilio</title>
 
-<head>
-    <title>Twilio</title>
+        <style type="text/css">
+            .template {
+                display: none;
+            }
+            .btnsubmit {
+                margin: 25px;
+                border-radius: 10px;
+                font-size: 18px;
+                font-family: "Cookie", cursive;
+                cursor: pointer;
+            }
+        </style>
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
 
-    <style type="text/css">
-        .template {
-            display: none
-        }
-        .btnsubmit {
-            margin: 25px;
-            border-radius: 10px;
-            font-size: 18px;
-            font-family: 'Cookie', cursive;
-            cursor: pointer;
-        }
-    </style>
-    <link rel="manifest" href="/manifest.webmanifest">
-</head>
+    <body>
+        <h1>Twilio Fetch Usages:-</h1>
 
-<body>
+        <form>
+            Sub account SId :
+            <input twilio="twilioGetBillingUsages.subaccountSid" required />
+            <br />
+            <button class="btnsubmit" actions="twilioGetBillingUsages">
+                Twilio Fetch Usages
+            </button>
+        </form>
 
-
-    <h1>Twilio Fetch Usages:- </h1>
-
-    <form>
-        Sub account SId : <input twilio="twilioGetBillingUsages.subaccountSid" required>
-        <br/>
-        <button class="btnsubmit"  actions='twilioGetBillingUsages'>Twilio Fetch Usages</button>
-    </form>
-
-
-    <div template_id="twilioGetBillingUsages">
-         <h4>Twilio Fetch Usages :- </h4>
-        <div class="template margin:10px " value="{{data.id}}" render-array="data">
-            <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap" >
-                
-                category : -<h4 class="margin-right:10px" value=" {{data.category}} "></h3>
-                price : -<h4 class="margin-right:10px" value=" {{data.price}} ({{data.priceUnit}}) "></h3>
-                usage :- <h4 class="margin-right:10px" value=" {{data.usage}} ({{data.usageUnit}}) "></h3>
-                count : -<h4 class="margin-right:10px" value=" {{data.count}} ({{data.countUnit}}) "></h3>
-                
+        <div template_id="twilioGetBillingUsages">
+            <h4>Twilio Fetch Usages :-</h4>
+            <div
+                class="template margin:10px"
+                value="{{data.id}}"
+                render-array="data">
+                <div
+                    style="
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        flex-wrap: wrap;
+                    ">
+                    category : -
+                    <h4
+                        class="margin-right:10px"
+                        value=" {{data.category}} "></h4>
+                    price : -
+                    <h4
+                        class="margin-right:10px"
+                        value=" {{data.price}} ({{data.priceUnit}}) "></h4>
+                    usage :-
+                    <h4
+                        class="margin-right:10px"
+                        value=" {{data.usage}} ({{data.usageUnit}}) "></h4>
+                    count : -
+                    <h4
+                        class="margin-right:10px"
+                        value=" {{data.count}} ({{data.countUnit}}) "></h4>
+                </div>
+                <hr />
             </div>
-            <hr/>
         </div>
-    </div>
-</body>
+    </body>
 
+    <!--CoCreateJS-->
+    <!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js"  ></script>-->
 
+    <!--CoCreate Plugins-->
 
-
-<!--CoCreateJS-->
-<!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>-->
-
-<!--CoCreate Plugins-->
-
-<script src="../dist/CoCreate-twilio.js"></script>
-
-
+    <script src="../dist/CoCreate-twilio.js"></script>
 </html>

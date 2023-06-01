@@ -1,85 +1,128 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Twilio</title>
 
-<head>
-    <title>Twilio</title>
+        <style type="text/css">
+            .template {
+                display: none;
+            }
+            .btnsubmit {
+                margin: 25px;
+                border-radius: 10px;
+                font-size: 18px;
+                font-family: "Cookie", cursive;
+                cursor: pointer;
+            }
+        </style>
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
 
-    <style type="text/css">
-        .template {
-            display: none
-        }
-        .btnsubmit {
-            margin: 25px;
-            border-radius: 10px;
-            font-size: 18px;
-            font-family: 'Cookie', cursive;
-            cursor: pointer;
-        }
-    </style>
-    <link rel="manifest" href="/manifest.webmanifest">
-</head>
-
-<body>
-
-
-    <h1>Twilio Purchase Phone Number :- </h1>
-    <div style="display: flex;">
-        <form>
-            <!--<select placeholder="country">
+    <body>
+        <h1>Twilio Purchase Phone Number :-</h1>
+        <div style="display: flex">
+            <form>
+                <!--<select placeholder="country">
                 <option value="US">US</option>
             </select>
             -->
-            Contry :
-            <input placeholder="US" twilio="twiliofetchAvailbleNumbers.contryCode" required>
-            <br/>
-            <!--<select placeholder="country">
+                Contry :
+                <input
+                    placeholder="US"
+                    twilio="twiliofetchAvailbleNumbers.contryCode"
+                    required />
+                <br />
+                <!--<select placeholder="country">
                 <option value="number">Number</option>
             </select>-->
-            <input twilio="twiliofetchAvailbleNumbers.areaCode" placeholder="areaCode">
-            <input twilio="twiliofetchAvailbleNumbers.contains" placeholder="contains">
-            <input twilio="twiliofetchAvailbleNumbers.limit" placeholder="limit">
-            <!--<input twilio="twiliofetchAvailbleNumbers.contryCode">
+                <input
+                    twilio="twiliofetchAvailbleNumbers.areaCode"
+                    placeholder="areaCode" />
+                <input
+                    twilio="twiliofetchAvailbleNumbers.contains"
+                    placeholder="contains" />
+                <input
+                    twilio="twiliofetchAvailbleNumbers.limit"
+                    placeholder="limit" />
+                <!--<input twilio="twiliofetchAvailbleNumbers.contryCode">
             Mach to <select >
                 <option value="US">first part of number</option>
             </select>
             -->
-            capabilities |
-            <input type="checkbox" twilio="twiliofetchAvailbleNumbers.voiceEnabled" /> voice
-            <input type="checkbox" twilio="twiliofetchAvailbleNumbers.smsEnabled" /> SMS
-            <input type="checkbox" twilio="twiliofetchAvailbleNumbers.mmsEnabled" /> MMS
-            <button class="btnsubmit"  actions='twiliofetchAvailbleNumbers'>Twilio Fetch Availble Numbers</button>
-            <a href="./PhoneNumberListIncomming.jean.html">GET ALL incoming numbers in account</a>
-        </form>
-    
-      <!--  <form>
+                capabilities |
+                <input
+                    type="checkbox"
+                    twilio="twiliofetchAvailbleNumbers.voiceEnabled" />
+                voice
+                <input
+                    type="checkbox"
+                    twilio="twiliofetchAvailbleNumbers.smsEnabled" />
+                SMS
+                <input
+                    type="checkbox"
+                    twilio="twiliofetchAvailbleNumbers.mmsEnabled" />
+                MMS
+                <button class="btnsubmit" actions="twiliofetchAvailbleNumbers">
+                    Twilio Fetch Availble Numbers
+                </button>
+                <a href="./PhoneNumberListIncomming.jean.html"
+                    >GET ALL incoming numbers in account</a
+                >
+            </form>
+
+            <!--  <form>
             number: <input placeholder="+15017122661" twilio="twilioPurchasePhoneNumber.phoneNumber" required>
             <br/>
-            <button class="btnsubmit"  actions='twilioPurchasePhoneNumber'>Twilio Purchase Number</button>
+            <button class="btnsubmit"  actions="twilioPurchasePhoneNumber'>Twilio Purchase Number</button>
         </form>-->
-    </div>
-
-    
-    <div template_id="twiliofetchAvailbleNumbers">
-         <h4>Twilio Availble Numbers :- </h4>
-        <div class="template margin:10px " value="{{data.id}}" render-array="data">
-            <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap ">
-                <!--<h3 class="margin-right:10px" value="{{data.phoneNumber}}">phoneNumber></h3>-->
-                <form>
-                    number: <input value="{{data.phoneNumber}}" twilio="twilioPurchasePhoneNumber.phoneNumber" required>
-                    Method: <input placeholder="voiceMethod" value="POST" twilio="twilioPurchasePhoneNumber.voiceMethod" required>
-                    Incomming Call: <input placeholder="voiceUrl" value="https://server.cocreate.app:8088/twilio/incomming347" twilio="twilioPurchasePhoneNumber.voiceUrl" required>
-                    <br/>
-                    <button class="btnsubmit"  actions='twilioPurchasePhoneNumber'>Twilio Purchase Number</button>
-                </form>
-            </div>
-            <hr/>
         </div>
-    </div>
-</body>
 
-<!--CoCreateJS-->
-<script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>
-<!-- <script src="../dist/CoCreate-twilio.js"></script> -->
+        <div template_id="twiliofetchAvailbleNumbers">
+            <h4>Twilio Availble Numbers :-</h4>
+            <div
+                class="template margin:10px"
+                value="{{data.id}}"
+                render-array="data">
+                <div
+                    style="
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        flex-wrap: wrap;
+                    ">
+                    <!--<h3 class="margin-right:10px" value="{{data.phoneNumber}}">phoneNumber></h3>-->
+                    <form>
+                        number:
+                        <input
+                            value="{{data.phoneNumber}}"
+                            twilio="twilioPurchasePhoneNumber.phoneNumber"
+                            required />
+                        Method:
+                        <input
+                            placeholder="voiceMethod"
+                            value="POST"
+                            twilio="twilioPurchasePhoneNumber.voiceMethod"
+                            required />
+                        Incomming Call:
+                        <input
+                            placeholder="voiceUrl"
+                            value="https://server.cocreate.app:8088/twilio/incomming347"
+                            twilio="twilioPurchasePhoneNumber.voiceUrl"
+                            required />
+                        <br />
+                        <button
+                            class="btnsubmit"
+                            actions="twilioPurchasePhoneNumber">
+                            Twilio Purchase Number
+                        </button>
+                    </form>
+                </div>
+                <hr />
+            </div>
+        </div>
+    </body>
 
-
+    <!--CoCreateJS-->
+    <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
+    <!-- <script src="../dist/CoCreate-twilio.js"></script> -->
 </html>

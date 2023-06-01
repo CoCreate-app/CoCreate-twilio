@@ -1,51 +1,60 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Twilio</title>
 
-<head>
-    <title>Twilio</title>
+        <style type="text/css">
+            .template {
+                display: none;
+            }
+            .btnsubmit {
+                margin: 25px;
+                border-radius: 10px;
+                font-size: 18px;
+                font-family: "Cookie", cursive;
+                cursor: pointer;
+            }
+        </style>
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
 
-    <style type="text/css">
-        .template {
-            display: none
-        }
-        .btnsubmit {
-            margin: 25px;
-            border-radius: 10px;
-            font-size: 18px;
-            font-family: 'Cookie', cursive;
-            cursor: pointer;
-        }
-    </style>
-    <link rel="manifest" href="/manifest.webmanifest">
-</head>
+    <body>
+        <h1>Get Twilio Phone Number List :-</h1>
 
-<body>
+        <form>
+            accountId :
+            <input twilio="twilioPhoneNumberList.accountId" required />
+            authToken :
+            <input twilio="twilioPhoneNumberList.authToken" required />
+            <br />
+            <button class="btnsubmit" actions="twilioPhoneNumberList">
+                Get Twilio Number List
+            </button>
+        </form>
 
-
-    <h1>Get Twilio Phone Number List :- </h1>
-
-    <form>
-        accountId : <input twilio="twilioPhoneNumberList.accountId" required>
-        authToken : <input twilio="twilioPhoneNumberList.authToken" required>
-        <br/>
-        <button class="btnsubmit"  actions='twilioPhoneNumberList'>Get Twilio Number List</button>
-    </form>
-
-
-    <div template_id="twilioPhoneNumberList">
-         <h4>Twilio Phone Numbers List :- </h4>
-        <div class="template margin:10px " value="{{data.id}}" render-array="data">
-            <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap ">
-                <h3 class="margin-right:10px" value="{{data.phoneNumber}}">phoneNumber></h3>
+        <div template_id="twilioPhoneNumberList">
+            <h4>Twilio Phone Numbers List :-</h4>
+            <div
+                class="template margin:10px"
+                value="{{data.id}}"
+                render-array="data">
+                <div
+                    style="
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        flex-wrap: wrap;
+                    ">
+                    <h3 class="margin-right:10px" value="{{data.phoneNumber}}">
+                        phoneNumber
+                    </h3>
+                </div>
+                <hr />
             </div>
-            <hr/>
         </div>
-    </div>
 
-    <!--CoCreateJS-->
-    <script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>
-    <!-- <script src="../dist/CoCreate-twilio.js"></script> -->
-
-
-</body>
+        <!--CoCreateJS-->
+        <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
+        <!-- <script src="../dist/CoCreate-twilio.js"></script> -->
+    </body>
 </html>

@@ -1,52 +1,47 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-    <title>Twilio</title>
+    <head>
+        <title>Twilio</title>
 
-    <style type="text/css">
-      .template{display:none}
-    </style>
+        <style type="text/css">
+            .template {
+                display: none;
+            }
+        </style>
 
-    <link rel="manifest" href="/manifest.webmanifest">
-</head>
-<body>
-    
-<h1>Form Demo</h1>
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
+    <body>
+        <h1>Form Demo</h1>
 
-<!-- we can test this now as there is no action using response... we can reun twiml(xml) and display in a consolelog -->
-<form>
-    
-    <!-- reponse.gather(__props, __param) -->
-    
-    
-    <div twilio="response.gather.__props.input" value="speech dtmf"></div>
-    <div twilio="response.gather.__props.timeout" value="3"></div>
-    <div twilio="response.gather.__props.numDigits" value="1"></div>
-    <!--<input twilio="response.gather.__props.timeout" paceholder="timeout">-->
-    <!--<input twilio="response.gather.__props.numDigits" paceholder="numDigits">-->
-    
-    
-    <div twilio="response.gather.say.__props" paceholder="say">Hello 01-- Say</div>
-    
-    
-    <div twilio="response.say" twilio_array="say">
-        <div twilio="say.__props">Say 1</div>
-    </div>
-    <div twilio="response.say" twilio_array="say">
-        <div twilio="say.__props">Say 2</div>
-    </div>
-    <button actions='response'>response.gather get twiml</button>
-</form>   
+        <!-- we can test this now as there is no action using response... we can reun twiml(xml) and display in a consolelog -->
+        <form>
+            <!-- reponse.gather(__props, __param) -->
 
+            <div
+                twilio="response.gather.__props.input"
+                value="speech dtmf"></div>
+            <div twilio="response.gather.__props.timeout" value="3"></div>
+            <div twilio="response.gather.__props.numDigits" value="1"></div>
+            <!--<input twilio="response.gather.__props.timeout" paceholder="timeout">-->
+            <!--<input twilio="response.gather.__props.numDigits" paceholder="numDigits">-->
 
+            <div twilio="response.gather.say.__props" paceholder="say">
+                Hello 01-- Say
+            </div>
 
+            <div twilio="response.say" twilio_array="say">
+                <div twilio="say.__props">Say 1</div>
+            </div>
+            <div twilio="response.say" twilio_array="say">
+                <div twilio="say.__props">Say 2</div>
+            </div>
+            <button actions="response">response.gather get twiml</button>
+        </form>
 
-<!--CoCreateJS-->
-<!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>-->
+        <!--CoCreateJS-->
+        <!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js"  ></script>-->
 
-<script src="../dist/CoCreate-twilio.js"></script>
-
-
-</body>
-
+        <script src="../dist/CoCreate-twilio.js"></script>
+    </body>
 </html>

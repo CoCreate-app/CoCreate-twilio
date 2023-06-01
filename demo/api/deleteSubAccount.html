@@ -1,29 +1,31 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-     <title>Twilio</title>
-    <style type="text/css">
-      .template{display:none}
-    </style>
- </head> 
- 
- <body>
-    <h1>Delete Sub Accounts - Twilio</h1>
-    <form>
-       Sub Account sId: - <input twilio='twilioDeleteSubAccount.AccountId' value='' required></input>
+    <head>
+        <title>Twilio</title>
+        <style type="text/css">
+            .template {
+                display: none;
+            }
+        </style>
+    </head>
 
-      <button actions='twilioDeleteSubAccount'> Delete Sub Account</button>
-    </form>
- </body>
+    <body>
+        <h1>Delete Sub Accounts - Twilio</h1>
+        <form>
+            Sub Account sId: -
+            <input
+                twilio="twilioDeleteSubAccount.AccountId"
+                value=""
+                required />
 
+            <button actions="twilioDeleteSubAccount">Delete Sub Account</button>
+        </form>
+    </body>
 
+    <!--CoCreateJS-->
+    <!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js"  ></script>-->
 
+    <!--CoCreate Plugins-->
 
-<!--CoCreateJS-->
-<!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>-->
-
-<!--CoCreate Plugins-->
-
-<script src="../dist/CoCreate-twilio.js"></script>
-
+    <script src="../dist/CoCreate-twilio.js"></script>
 </html>

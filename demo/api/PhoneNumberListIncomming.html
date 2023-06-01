@@ -1,60 +1,95 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Twilio</title>
 
-<head>
-    <title>Twilio</title>
+        <style type="text/css">
+            .template {
+                display: none;
+            }
+            .btnsubmit {
+                margin: 25px;
+                border-radius: 10px;
+                font-size: 18px;
+                font-family: "Cookie", cursive;
+                cursor: pointer;
+            }
+        </style>
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
 
-    <style type="text/css">
-        .template {
-            display: none
-        }
-        .btnsubmit {
-            margin: 25px;
-            border-radius: 10px;
-            font-size: 18px;
-            font-family: 'Cookie', cursive;
-            cursor: pointer;
-        }
-    </style>
-    <link rel="manifest" href="/manifest.webmanifest">
-</head>
-
-<body>
-
-
-    <h1>Twilio Filter Phone Number in Account:- </h1>
-    <div style="display: flex;">
-        <form>
-            <input placeholder="limit" twilio="twilioGetIncommingPhoneNumbers.limit" required>
-            <button class="btnsubmit"  actions='twilioGetIncommingPhoneNumbers'>Twilio Fetch Numbers in account</button>
-        </form>
-    
-    </div>
-
-    
-    <div template_id="twilioGetIncommingPhoneNumbers">
-         <h4>Twilio Availble Numbers :- </h4>
-        <div class="template margin:10px " value="{{data.phoneNumber}}" render-array="data">
-            <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap ">
-                <form>
-                    <input value="{{data.sid}}" type="hidden" twilio="twilioDeletePhoneNumber.sid" required>
-                    number: <span value="{{data.phoneNumber}}"></span>
-                    <input value="{{data.sid}}" type="hidden" twilio="updateIncomingPhoneNumber.sid" required>
-                    <br>Method: <input placeholder="voiceMethod" value="{{data.voiceMethod}}" twilio="updateIncomingPhoneNumber.voiceMethod" required>
-                    <br>Incomming Call: <input placeholder="voiceUrl" value="{{data.voiceUrl}}" twilio="updateIncomingPhoneNumber.voiceUrl" required>
-                    <br/>
-                    <button class="btnsubmit"  actions='twilioDeletePhoneNumber'>DEL</button>
-                    <button class="btnsubmit"  actions='updateIncomingPhoneNumber'>Updated</button>
-                </form>
-            </div>
-            <hr/>
+    <body>
+        <h1>Twilio Filter Phone Number in Account:-</h1>
+        <div style="display: flex">
+            <form>
+                <input
+                    placeholder="limit"
+                    twilio="twilioGetIncommingPhoneNumbers.limit"
+                    required />
+                <button
+                    class="btnsubmit"
+                    actions="twilioGetIncommingPhoneNumbers">
+                    Twilio Fetch Numbers in account
+                </button>
+            </form>
         </div>
-    </div>
-    
-    <!--CoCreateJS-->
-    <script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>
-    <!-- <script src="../dist/CoCreate-twilio.js"></script> -->
 
-</body>
+        <div template_id="twilioGetIncommingPhoneNumbers">
+            <h4>Twilio Availble Numbers :-</h4>
+            <div
+                class="template margin:10px"
+                value="{{data.phoneNumber}}"
+                render-array="data">
+                <div
+                    style="
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        flex-wrap: wrap;
+                    ">
+                    <form>
+                        <input
+                            value="{{data.sid}}"
+                            type="hidden"
+                            twilio="twilioDeletePhoneNumber.sid"
+                            required />
+                        number: <span value="{{data.phoneNumber}}"></span>
+                        <input
+                            value="{{data.sid}}"
+                            type="hidden"
+                            twilio="updateIncomingPhoneNumber.sid"
+                            required />
+                        <br />Method:
+                        <input
+                            placeholder="voiceMethod"
+                            value="{{data.voiceMethod}}"
+                            twilio="updateIncomingPhoneNumber.voiceMethod"
+                            required />
+                        <br />Incomming Call:
+                        <input
+                            placeholder="voiceUrl"
+                            value="{{data.voiceUrl}}"
+                            twilio="updateIncomingPhoneNumber.voiceUrl"
+                            required />
+                        <br />
+                        <button
+                            class="btnsubmit"
+                            actions="twilioDeletePhoneNumber">
+                            DEL
+                        </button>
+                        <button
+                            class="btnsubmit"
+                            actions="updateIncomingPhoneNumber">
+                            Updated
+                        </button>
+                    </form>
+                </div>
+                <hr />
+            </div>
+        </div>
 
+        <!--CoCreateJS-->
+        <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
+        <!-- <script src="../dist/CoCreate-twilio.js"></script> -->
+    </body>
 </html>

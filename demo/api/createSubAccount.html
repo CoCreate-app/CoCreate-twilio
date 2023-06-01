@@ -1,27 +1,33 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
- <title>Twilio</title>
+    <head>
+        <title>Twilio</title>
 
-<style type="text/css">
-  .template{display:none}
-</style>
+        <style type="text/css">
+            .template {
+                display: none;
+            }
+        </style>
 
- <head>     
-      <h1>Create Sub Accounts - Twilio</h1>
-<form>
-   Friendly Name<input twilio='twilioCreateSubAccount.friendlyName' value='' required></input>
+        <head>
+            <h1>Create Sub Accounts - Twilio</h1>
+            <form>
+                Friendly Name<input
+                    twilio="twilioCreateSubAccount.friendlyName"
+                    value=""
+                    required />
 
-  <button actions='twilioCreateSubAccount'>Click create Sub Account</button>
-</form>
+                <button actions="twilioCreateSubAccount">
+                    Click create Sub Account
+                </button>
+            </form>
 
+            <!--CoCreateJS-->
+            <!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js"  ></script>-->
 
+            <!--CoCreate Plugins-->
 
-<!--CoCreateJS-->
-<!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>-->
-
-<!--CoCreate Plugins-->
-
-<script src="../dist/CoCreate-twilio.js"></script>
-
-
+            <script src="../dist/CoCreate-twilio.js"></script>
+        </head>
+    </head>
+</html>

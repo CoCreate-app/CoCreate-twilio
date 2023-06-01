@@ -1,125 +1,201 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Create Call | wilio </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="manifest" href="/manifest.webmanifest" />
-	</head>
+        <title>Create Call | wilio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
     <style>
-        .template{
-            display:none;
+        .template {
+            display: none;
         }
     </style>
     <body>
-        
         <form data-template_id="createCall" data-render_id="render2">
             <!--<input twilio="dial.To" value="+19418820466">-->
-            <input twilio="dial.To" value="+13472189814">
-            <input twilio="dial.From" value="+16027372368">
+            <input twilio="dial.To" value="+13472189814" />
+            <input twilio="dial.From" value="+16027372368" />
             <!--<input twilio="holdCall.CallSid" value="{{render2.parameters.CallSid}}">-->
-            
+
             <!-- dial conference -->
-            <input twilio="dial.conference.friendlyName" value="{{data.dial.from}}">
-            <input twilio="dial.conference.CallSid" value="{{render2.parameters.CallSid}}">
-            <input twilio="dial.conference.holdUrl" value="https://server.cocreate.app:8088/twilio/actions_twiml?opt=holdmusiuc">
-            
+            <input
+                twilio="dial.conference.friendlyName"
+                value="{{data.dial.from}}" />
+            <input
+                twilio="dial.conference.CallSid"
+                value="{{render2.parameters.CallSid}}" />
+            <input
+                twilio="dial.conference.holdUrl"
+                value="https://server.cocreate.app:8088/twilio/actions_twiml?opt=holdmusiuc" />
+
             <!-- create conference -->
-            <input twilio="conference.friendlyName" placeholder="create confrence">
-            
-                <input twilio="hangupStopCall.CallSid" value="{{render2.parameters.CallSid}}">
-            
+            <input
+                twilio="conference.friendlyName"
+                placeholder="create confrence" />
+
+            <input
+                twilio="hangupStopCall.CallSid"
+                value="{{render2.parameters.CallSid}}" />
+
             <!-- pass enque -->
             <!--<input twilio="holdCall.nameEnqueue" value="support">-->
-            
-            <br>
-            <button actions='createCall'>start Call</button>
-            <!--<button actions='holdCall, getConferences' >Hold</button>-->
-            <button actions='dial.conference, getConferences'>Hold</button>
-            <button actions='unholdCall' >UnHold</button>
-            <button actions='answerCall' >answerCall</button>
-            <button actions='hangupCall'>StopCall</button>
-            <button actions='getConferences'>getConferences</button>
-            <button actions='createConferences'>getConferences</button>
-            
-            </form>
-            
-            <!--<button actions='hangupStopCall'>StopCallAll</button>-->
-            <div data-template_id="getConferences">
-                <h4>List conferences:- </h4>
-                <div class="template margin:10px;"   value="{{data.id}}" data-render_array="data">
-                    <form class="padding:5px">
-                        <div style="display:flex ; align-items:center; width:100% ;flex-wrap:wrap" >
-                            <input twilio="joinConference.friendlyName" value="{{data.friendlyName}}">
-                            <input type="hidden" twilio="endConference.CallSid" value="{{data.idconference}}">
-                            <input type="hidden"  twilio="holdConference.CallSid" value="{{data.idconference}}">
-                            <input type="hidden"  twilio="unholdConference.CallSid" value="{{data.idconference}}">
-                            <button actions='holdConference' >hold Conf</button>
-                            <button actions='unholdConference' >UnHold Conf</button>
-                            <button actions='joinConference' 
-                                            data-friendlyName="{{data.friendlyName}}"
-                            >Join</button>
-                            <button actions='endConference' >Closed</button>
-                        </div>
+
+            <br />
+            <button actions="createCall">start Call</button>
+            <!--<button actions="holdCall, getConferences">Hold</button>-->
+            <button actions="dial.conference, getConferences">Hold</button>
+            <button actions="unholdCall">UnHold</button>
+            <button actions="answerCall">answerCall</button>
+            <button actions="hangupCall">StopCall</button>
+            <button actions="getConferences">getConferences</button>
+            <button actions="createConferences">getConferences</button>
+        </form>
+
+        <!--<button actions="hangupStopCall">StopCallAll</button>-->
+        <div data-template_id="getConferences">
+            <h4>List conferences:-</h4>
+            <div
+                class="template margin:10px;"
+                value="{{data.id}}"
+                data-render_array="data">
+                <form class="padding:5px">
+                    <div
+                        style="
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            flex-wrap: wrap;
+                        ">
+                        <input
+                            twilio="joinConference.friendlyName"
+                            value="{{data.friendlyName}}" />
+                        <input
+                            type="hidden"
+                            twilio="endConference.CallSid"
+                            value="{{data.idconference}}" />
+                        <input
+                            type="hidden"
+                            twilio="holdConference.CallSid"
+                            value="{{data.idconference}}" />
+                        <input
+                            type="hidden"
+                            twilio="unholdConference.CallSid"
+                            value="{{data.idconference}}" />
+                        <button actions="holdConference">hold Conf</button>
+                        <button actions="unholdConference">UnHold Conf</button>
+                        <button
+                            actions="joinConference"
+                            data-friendlyname="{{data.friendlyName}}">
+                            Join
+                        </button>
+                        <button actions="endConference">Closed</button>
+                    </div>
+                </form>
+                <hr />
+
+                <div
+                    data-template_id="getParticipantsConferences_{{data.idconference}}">
+                    <form>
+                        <input
+                            type="hidden"
+                            twilio="getParticipantsConference.CallSid"
+                            value="{{data.idconference}}" />
+                        <button
+                            actions="getParticipantsConference"
+                            data-friendlyname="{{data.friendlyName}}"
+                            data-idconference="{{data.idconference}}">
+                            GetParticipants
+                        </button>
                     </form>
-                    <hr/>
-                        
-                        <div data-template_id="getParticipantsConferences_{{data.idconference}}">
-                            <form>
-                                <input type="hidden"  twilio="getParticipantsConference.CallSid" value="{{data.idconference}}">
-                                    <button actions='getParticipantsConference' 
-                                        data-friendlyName="{{data.friendlyName}}"
-                                        data-idconference="{{data.idconference}}"
-                                    >GetParticipants</button>
-                            </form>
-                            <div class="template margin:10px;"   value="{{participant.id}}" data-render_array="participant">
-                                <form class="padding:5px">
-                                    
-                                    <input type="hidden" twilio="delParticipantsConference.idconference" value="{{participant.conferenceSid}}">
-                                    <input type="hidden" twilio="delParticipantsConference.idparticipant" value="{{participant.callSid}}">
-                                    
-                                    <input type="hidden" twilio="muteParticipantsConference.idconference" value="{{participant.conferenceSid}}">
-                                    <input type="hidden" twilio="muteParticipantsConference.idparticipant" value="{{participant.callSid}}">
-                                    
-                                    <input type="hidden" twilio="unmuteParticipantsConference.idconference" value="{{participant.conferenceSid}}">
-                                    <input type="hidden" twilio="unmuteParticipantsConference.idparticipant" value="{{participant.callSid}}">
-                                    
-                                    <input type="hidden" twilio="holdParticipantConference.idconference" value="{{participant.conferenceSid}}">
-                                    <input type="hidden" twilio="holdParticipantConference.idparticipant" value="{{participant.callSid}}">
-                                    
-                                    <input type="hidden" twilio="unholdParticipantConference.idconference" value="{{participant.conferenceSid}}">
-                                    <input type="hidden" twilio="unholdParticipantConference.idparticipant" value="{{participant.callSid}}">
-                                    
-                                    
-                                    <li> <span value="{{participant.call.sid}}"></span>  - TO: <span value="{{participant.call.to}}"></span> - from :<span value="{{participant.call.from}}"></span></span></li>
-                                    <button 
-                                            actions='muteParticipantsConference' 
-                                            data-idparticipant="{{participant.callSid}}" 
-                                    >Mute</button>
-                                    <button style="display:none"
-                                            actions='unmuteParticipantsConference' 
-                                            data-idparticipant="{{participant.callSid}}"
-                                    >UnMute</button>
-                                    <button 
-                                            actions='holdParticipantConference' 
-                                            data-idparticipant="{{participant.callSid}}" 
-                                    >HoldParticipante</button>
-                                    <button style="display:none"
-                                            actions='unholdParticipantConference' 
-                                            data-idparticipant="{{participant.callSid}}"
-                                    >UnHoldParticipante</button>
-                                    <button 
-                                            actions='delParticipantsConference'
-                                    >DElete</button>
-                                </form>
-                            </div>
-                        </div>
+                    <div
+                        class="template margin:10px;"
+                        value="{{participant.id}}"
+                        data-render_array="participant">
+                        <form class="padding:5px">
+                            <input
+                                type="hidden"
+                                twilio="delParticipantsConference.idconference"
+                                value="{{participant.conferenceSid}}" />
+                            <input
+                                type="hidden"
+                                twilio="delParticipantsConference.idparticipant"
+                                value="{{participant.callSid}}" />
+
+                            <input
+                                type="hidden"
+                                twilio="muteParticipantsConference.idconference"
+                                value="{{participant.conferenceSid}}" />
+                            <input
+                                type="hidden"
+                                twilio="muteParticipantsConference.idparticipant"
+                                value="{{participant.callSid}}" />
+
+                            <input
+                                type="hidden"
+                                twilio="unmuteParticipantsConference.idconference"
+                                value="{{participant.conferenceSid}}" />
+                            <input
+                                type="hidden"
+                                twilio="unmuteParticipantsConference.idparticipant"
+                                value="{{participant.callSid}}" />
+
+                            <input
+                                type="hidden"
+                                twilio="holdParticipantConference.idconference"
+                                value="{{participant.conferenceSid}}" />
+                            <input
+                                type="hidden"
+                                twilio="holdParticipantConference.idparticipant"
+                                value="{{participant.callSid}}" />
+
+                            <input
+                                type="hidden"
+                                twilio="unholdParticipantConference.idconference"
+                                value="{{participant.conferenceSid}}" />
+                            <input
+                                type="hidden"
+                                twilio="unholdParticipantConference.idparticipant"
+                                value="{{participant.callSid}}" />
+
+                            <li>
+                                <span value="{{participant.call.sid}}"></span> -
+                                TO:
+                                <span value="{{participant.call.to}}"></span> -
+                                from :<span
+                                    value="{{participant.call.from}}"></span>
+                            </li>
+                            <button
+                                actions="muteParticipantsConference"
+                                data-idparticipant="{{participant.callSid}}">
+                                Mute
+                            </button>
+                            <button
+                                style="display: none"
+                                actions="unmuteParticipantsConference"
+                                data-idparticipant="{{participant.callSid}}">
+                                UnMute
+                            </button>
+                            <button
+                                actions="holdParticipantConference"
+                                data-idparticipant="{{participant.callSid}}">
+                                HoldParticipante
+                            </button>
+                            <button
+                                style="display: none"
+                                actions="unholdParticipantConference"
+                                data-idparticipant="{{participant.callSid}}">
+                                UnHoldParticipante
+                            </button>
+                            <button actions="delParticipantsConference">
+                                DElete
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
+        </div>
 
-            <!--CoCreateJS-->
-            <script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>     
-                        
+        <!--CoCreateJS-->
+        <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
     </body>
 </html>
-
-

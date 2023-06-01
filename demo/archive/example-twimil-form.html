@@ -1,128 +1,105 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-    <title>Stripe</title>
+    <head>
+        <title>Stripe</title>
 
-    <style type="text/css">
-      .template{display:none}
-    </style>
-
-    <link rel="manifest" href="/manifest.webmanifest">
-</head>
-<body>
-    
-<h1>Form Demo</h1>
-
-<!-- we can test this now as there is no action using response... we can reun twiml(xml) and display in a consolelog -->
-<form>
-    
-    <!-- reponse.gather(__props, __param) -->
-    
-    
-    <input twilio="response.gather.__props.input" paceholder="input">
-    <input twilio="response.gather.__props.timeout" paceholder="timeout">
-    <input twilio="response.gather.__props.numDigits" paceholder="numDigits">
-    
-    <input twilio="response.gather.__param" paceholder="parameter">
-
-    <input twilio="response.gather.say.__param" paceholder="say">
-    <button actions='response'>response.gather get twiml</button>
-</form>   
-
-
-<!--<form>-->
-<!--    <input twilio="dial.conference" paceholder="friendlyname">-->
-<!--    <input twilio="dial.conference.waitUrl" paceholder="waitUrl">-->
-<!--    <button actions='dial'>dial.confrence</button>-->
-<!--</form>   -->
-
-<!--<form>-->
-<!--    <input twilio="gather" paceholder="friendlyname">-->
-<!--    <input twilio="gather.input" paceholder="input">-->
-<!--    <input twilio="gather.timeout" paceholder="timeout">-->
-<!--    <input twilio="gather.numDigits" paceholder="numDigits">-->
-<!--    <input twilio="gather.say" paceholder="say">-->
-<!--    <button actions='gather'>gather twimil</button>-->
-<!--</form>-->
-<!--<response>-->
-<!--    <gatehr input="" numDigites="" timeout="">-->
-<!--        <say>hello1</say>-->
-<!--    </gatehr> -->
-<!--    <say>hello2</say>-->
-<!--</response>-->
-
-<form>
-    <!--<div twilio="dial.conference" twilio_array="confrence">-->
-    <!--	<input twilio="conference.waitUrl">-->
-    <!--</div>-->
-    
-    <!--<div twilio="twilioCreateRequest.address" twilio_array="address">-->
-    <!--	<input twilio="address.home.city">-->
-    <!--	<input twilio="address.name">-->
-    <!--	<input twilio="address.line1">-->
-
-    <!--	<div twilio="address.billing" twilio_array="b">-->
-    <!--	    <input twilio="b.address1">-->
-    <!--	    <input twilio="b.city">-->
-    <!--	    <input twilio="b.code.zip">-->
-    <!--	    <input twilio="b.code.postal">-->
-    <!--	</div>-->
-    <!--</div>-->
-    <!--<input twilio="twilioCreateRequest.email">-->
-    
-    <!--<div data-template_id="twilioCreateCard" data-render_array="data.card" data-render_key="c"  twilio="twilioCreateCard.card" twilio_array="card">-->
-    <!--    <input twilio="card.number" value="c.number">-->
-    <!--    <input twilio="card.cvv" value="c.cvv">-->
-    <!--    <input twilio="card.expiry" value="c.expiry">-->
-    <!--</div>-->
-    <!--<div twilio="twilioCreateCard.card" twilio_array="card">-->
-    <!--    <input twilio="card.number">-->
-    <!--    <input twilio="card.cvv">-->
-    <!--    <input twilio="card.expiry">-->
-    <!--</div>-->
-    <!--<div twilio="twilioCreateCard.card" twilio_array="card">-->
-    <!--    <input twilio="card.number">-->
-    <!--    <input twilio="card.cvv">-->
-    <!--    <input twilio="card.expiry">-->
-    <!--</div>-->
-    
-    
-    <button actions='twilioCreateRequest, twilioCreateCard'>Create Form</button>
-</form>
-
-<h1>Result</h1>
-twilioCreateRequestaction{
-    name: '',
-    address: [{
-        home: {
-            city: ''
-        },
-        work: '',
-        home: {
-            city: ''
-        },
-        name: '',
-        line1: '',
-        billing: [{
-            address1,
-            city,
-            code: {
-                zip: '',
-                postal: '',
+        <style type="text/css">
+            .template {
+                display: none;
             }
-        }]
-    }],
-    email: '',
-}
+        </style>
 
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
+    <body>
+        <h1>Form Demo</h1>
 
+        <!-- we can test this now as there is no action using response... we can reun twiml(xml) and display in a consolelog -->
+        <form>
+            <!-- reponse.gather(__props, __param) -->
 
+            <input twilio="response.gather.__props.input" paceholder="input" />
+            <input
+                twilio="response.gather.__props.timeout"
+                paceholder="timeout" />
+            <input
+                twilio="response.gather.__props.numDigits"
+                paceholder="numDigits" />
 
+            <input twilio="response.gather.__param" paceholder="parameter" />
 
-<!--CoCreateJS-->
-<script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>
-<!-- <script src="../dist/CoCreate-twilio.js"></script> -->
+            <input twilio="response.gather.say.__param" paceholder="say" />
+            <button actions="response">response.gather get twiml</button>
+        </form>
 
-</body>
+        <!--<form>-->
+        <!--    <input twilio="dial.conference" paceholder="friendlyname">-->
+        <!--    <input twilio="dial.conference.waitUrl" paceholder="waitUrl">-->
+        <!--    <button actions="dial">dial.confrence</button>-->
+        <!--</form>   -->
 
+        <!--<form>-->
+        <!--    <input twilio="gather" paceholder="friendlyname">-->
+        <!--    <input twilio="gather.input" paceholder="input">-->
+        <!--    <input twilio="gather.timeout" paceholder="timeout">-->
+        <!--    <input twilio="gather.numDigits" paceholder="numDigits">-->
+        <!--    <input twilio="gather.say" paceholder="say">-->
+        <!--    <button actions="gather">gather twimil</button>-->
+        <!--</form>-->
+        <!--<response>-->
+        <!--    <gatehr input="" numDigites="" timeout="">-->
+        <!--        <say>hello1</say>-->
+        <!--    </gatehr> -->
+        <!--    <say>hello2</say>-->
+        <!--</response>-->
+
+        <form>
+            <!--<div twilio="dial.conference" twilio_array="confrence">-->
+            <!--	<input twilio="conference.waitUrl">-->
+            <!--</div>-->
+
+            <!--<div twilio="twilioCreateRequest.address" twilio_array="address">-->
+            <!--	<input twilio="address.home.city">-->
+            <!--	<input twilio="address.name">-->
+            <!--	<input twilio="address.line1">-->
+
+            <!--	<div twilio="address.billing" twilio_array="b">-->
+            <!--	    <input twilio="b.address1">-->
+            <!--	    <input twilio="b.city">-->
+            <!--	    <input twilio="b.code.zip">-->
+            <!--	    <input twilio="b.code.postal">-->
+            <!--	</div>-->
+            <!--</div>-->
+            <!--<input twilio="twilioCreateRequest.email">-->
+
+            <!--<div data-template_id="twilioCreateCard" data-render_array="data.card" data-render_key="c"  twilio="twilioCreateCard.card" twilio_array="card">-->
+            <!--    <input twilio="card.number" value="c.number">-->
+            <!--    <input twilio="card.cvv" value="c.cvv">-->
+            <!--    <input twilio="card.expiry" value="c.expiry">-->
+            <!--</div>-->
+            <!--<div twilio="twilioCreateCard.card" twilio_array="card">-->
+            <!--    <input twilio="card.number">-->
+            <!--    <input twilio="card.cvv">-->
+            <!--    <input twilio="card.expiry">-->
+            <!--</div>-->
+            <!--<div twilio="twilioCreateCard.card" twilio_array="card">-->
+            <!--    <input twilio="card.number">-->
+            <!--    <input twilio="card.cvv">-->
+            <!--    <input twilio="card.expiry">-->
+            <!--</div>-->
+
+            <button actions="twilioCreateRequest, twilioCreateCard">
+                Create Form
+            </button>
+        </form>
+
+        <h1>Result</h1>
+        twilioCreateRequestaction{ name: '', address: [{ home: { city: '' },
+        work: '', home: { city: '' }, name: '', line1: '', billing: [{ address1,
+        city, code: { zip: '', postal: '', } }] }], email: '', }
+
+        <!--CoCreateJS-->
+        <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
+        <!-- <script src="../dist/CoCreate-twilio.js"></script> -->
+    </body>
 </html>

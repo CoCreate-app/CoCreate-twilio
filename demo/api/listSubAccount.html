@@ -1,62 +1,85 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
- <title>Twilio</title>
+    <head>
+        <title>Twilio</title>
 
-<style type="text/css">
-  .template{display:none}
-</style>
+        <style type="text/css">
+            .template {
+                display: none;
+            }
+        </style>
 
- <head>     
-      <h1>List Sub Accounts - Twilio</h1>
-  <form>
-    <button actions='twilioListSubAccounts'>Click getList</button>
-  </form>
+        <head>
+            <h1>List Sub Accounts - Twilio</h1>
+            <form>
+                <button actions="twilioListSubAccounts">Click getList</button>
+            </form>
 
-
-  <div template_id="abc1" render_id="render2">
-    <div class="template card card margin:10px " 
-      value="{{render2.data._id}}" 
-      template_id="abc1" 
-      render-array="render2.data">
-          <div class="display:flex justify-content:space-between align-items:center width:100%">
-            <div class="display:flex">
-              <div class="display:flex align-items:center">
-                <span class="icon status font-size:20px margin-right:10px"></span>
-              </div>
-              <div class="display:flex align-items:center  flex-wrap:wrap">
-                <h3 class="margin-right:10px" value="{{render2.data.name}}">ID</h3>
-                <span class="margin-right:10px" value="{{render2.data.description}}">email</span>
-              </div>
+            <div template_id="abc1" render_id="render2">
+                <div
+                    class="template card card margin:10px"
+                    value="{{render2.data._id}}"
+                    template_id="abc1"
+                    render-array="render2.data">
+                    <div
+                        class="display:flex justify-content:space-between align-items:center width:100%">
+                        <div class="display:flex">
+                            <div class="display:flex align-items:center">
+                                <span
+                                    class="icon status font-size:20px margin-right:10px"></span>
+                            </div>
+                            <div
+                                class="display:flex align-items:center flex-wrap:wrap">
+                                <h3
+                                    class="margin-right:10px"
+                                    value="{{render2.data.name}}">
+                                    ID
+                                </h3>
+                                <span
+                                    class="margin-right:10px"
+                                    value="{{render2.data.description}}"
+                                    >email</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-    </div>
-  </div>
 
-  <div template_id="twilioListSubAccounts" >
-    <div class="template card card margin:10px " 
-      value="{{data._id}}" 
-      template_id="twilioListSubAccounts" 
-      render-array="data">
-            <div style="display:flex; justify-content:space-between; align-items:center; width:100%">
-                <h4 class="{{status}}" value="status : -{{data.status}}">status</h4>
-                <h4  value="{{data.friendlyName}}">friendlyName</h3>
-                <h4  value="sid : - {{data.sid}}">sid</h4>
-                <h4  value="authToken :- {{data.authToken}}">authToken</h4>
+            <div template_id="twilioListSubAccounts">
+                <div
+                    class="template card card margin:10px"
+                    value="{{data._id}}"
+                    template_id="twilioListSubAccounts"
+                    render-array="data">
+                    <div
+                        style="
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 100%;
+                        ">
+                        <h4
+                            class="{{status}}"
+                            value="status : -{{data.status}}">
+                            status
+                        </h4>
+                        <h4 value="{{data.friendlyName}}">friendlyName</h4>
+                        <h4 value="sid : - {{data.sid}}">sid</h4>
+                        <h4 value="authToken :- {{data.authToken}}">
+                            authToken
+                        </h4>
+                    </div>
+                    <hr />
+                </div>
             </div>
-            <hr/>
-    </div>
-  </div>
 
+            <!--CoCreateJS-->
+            <!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js"  ></script>-->
 
+            <!--CoCreate Plugins-->
 
-
-
-<!--CoCreateJS-->
-<!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>-->
-
-<!--CoCreate Plugins-->
-
-<script src="../dist/CoCreate-twilio.js"></script>
-
-
+            <script src="../dist/CoCreate-twilio.js"></script>
+        </head>
+    </head>
+</html>
