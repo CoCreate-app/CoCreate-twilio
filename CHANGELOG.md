@@ -1,3 +1,10 @@
+## [1.5.12](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.11...v1.5.12) (2023-06-02)
+
+
+### Bug Fixes
+
+* format demo html ([616f24e](https://github.com/CoCreate-app/CoCreate-twilio/commit/616f24ec198d966f2406fa8a36ec1ab8052d198f))
+
 ## [1.5.11](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.10...v1.5.11) (2023-05-21)
 
 
