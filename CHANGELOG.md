@@ -1,3 +1,10 @@
+## [1.5.13](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.12...v1.5.13) (2023-06-04)
+
+
+### Bug Fixes
+
+* **semantic-release:** worklow error solved by running node version 14 ([6288f42](https://github.com/CoCreate-app/CoCreate-twilio/commit/6288f426fa756135bc77c743789a45a995e25d5a))
+
 ## [1.5.12](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.11...v1.5.12) (2023-06-02)
 
 
