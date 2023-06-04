@@ -1,3 +1,11 @@
+## [1.5.14](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.13...v1.5.14) (2023-06-04)
+
+
+### Bug Fixes
+
+* replaced secert GITHUB_TOKEN with GITHUB ([5e4ef91](https://github.com/CoCreate-app/CoCreate-twilio/commit/5e4ef912595e438dd2fc9d76e32ef2c13dc8a81a))
+* Update dependencies versions for [@cocreate](https://github.com/cocreate) libraries ([7d45703](https://github.com/CoCreate-app/CoCreate-twilio/commit/7d45703305b93889bf761500193844f7cec00b54))
+
 ## [1.5.13](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.12...v1.5.13) (2023-06-04)
 
 
