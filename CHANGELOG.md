@@ -1,3 +1,10 @@
+## [1.5.18](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.17...v1.5.18) (2023-06-11)
+
+
+### Bug Fixes
+
+* renamed hosts to host. the value can be a string or an array of strings ([85afaf4](https://github.com/CoCreate-app/CoCreate-twilio/commit/85afaf4486ce39b3209160216df1fd3323317e9a))
+
 ## [1.5.17](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.16...v1.5.17) (2023-06-10)
 
 
