@@ -1,3 +1,10 @@
+## [1.5.20](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.19...v1.5.20) (2023-06-11)
+
+
+### Bug Fixes
+
+* @cocreate/cli moved to dependencies ([0012cad](https://github.com/CoCreate-app/CoCreate-twilio/commit/0012cad0f55832095c8345090be82b05544c8c48))
+
 ## [1.5.19](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.18...v1.5.19) (2023-06-11)
 
 
