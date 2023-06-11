@@ -1,3 +1,10 @@
+## [1.5.21](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.20...v1.5.21) (2023-06-11)
+
+
+### Bug Fixes
+
+* postintall error ([cab1e8d](https://github.com/CoCreate-app/CoCreate-twilio/commit/cab1e8df08888f97c1675722bbe39ce2df4bbcfd))
+
 ## [1.5.20](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.19...v1.5.20) (2023-06-11)
 
 
