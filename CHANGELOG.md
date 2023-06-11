@@ -1,3 +1,10 @@
+## [1.5.25](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.24...v1.5.25) (2023-06-11)
+
+
+### Bug Fixes
+
+* testing workflow ([1cbac4c](https://github.com/CoCreate-app/CoCreate-twilio/commit/1cbac4c9b9248a2a89cfb5bd24a05ad8a92b60e0))
+
 ## [1.5.24](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.23...v1.5.24) (2023-06-11)
 
 
