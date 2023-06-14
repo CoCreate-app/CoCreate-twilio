@@ -1,3 +1,10 @@
+## [1.5.29](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.28...v1.5.29) (2023-06-14)
+
+
+### Bug Fixes
+
+* Update dependencies versions for [@cocreate](https://github.com/cocreate) libraries ([36f2386](https://github.com/CoCreate-app/CoCreate-twilio/commit/36f2386b101986fdc1284f2a841433eba0dc45d6))
+
 ## [1.5.28](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.27...v1.5.28) (2023-06-11)
 
 
