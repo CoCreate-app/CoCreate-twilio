@@ -4,8 +4,8 @@ module.exports = {
     "host": "",
     "sources": [
         {
-            "collection": "files",
-            "document": {
+            "array": "files",
+            "object": {
                 "_id": "6029b6a3e979fb17407e25dc",
                 "name": "index.html",
                 "path": "/docs/twilio/index.html",

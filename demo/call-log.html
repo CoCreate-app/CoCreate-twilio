@@ -87,8 +87,8 @@
                 <li class="margin-right:15px">
                     <a
                         actions="pass, openModal"
-                        pass-collection="module-views"
-                        pass-document_id="5fa86bfd4b4c3e4dea76abec"
+                        pass-array="module-views"
+                        pass-object="5fa86bfd4b4c3e4dea76abec"
                         pass-name="html"
                         pass_to="render"
                         modal-width="100%"
@@ -98,8 +98,8 @@
                             class="display:flex height:18px fill:#505050"
                             src="/assets/svg/palette.svg"></i>
                         <div
-                            pass-collection="module-views"
-                            pass-document_id=""
+                            pass-array="module-views"
+                            pass-object=""
                             pass_to="builder"
                             pass_id="render"></div>
                     </a>
@@ -109,8 +109,8 @@
                     <a
                         actions="pass, openModal"
                         modal-src="form.html"
-                        pass-collection="module-views"
-                        pass-document_id=""
+                        pass-array="module-views"
+                        pass-object=""
                         pass_to="render"
                         modal-width="320px"
                         modal-height="100%"
@@ -158,7 +158,7 @@
                     ></a>
                 </li>
                 <li class="margin-right:15px">
-                    <a actions="import" collection="" pass_id="datatable"
+                    <a actions="import" array="" pass_id="datatable"
                         ><i
                             class="height:18px fill:#505050"
                             src="/assets/svg/file-upload.svg"></i
@@ -301,12 +301,12 @@
 
                 <tbody
                     template_id="datatable"
-                    collection="testtwillio"
+                    array="testtwillio"
                     filter-sort-name=""
                     filter-sort-direction="asc">
                     <tr
                         class="template background:whitesmoke:hover border-bottom:1px_solid_darkgray"
-                        document_id="{{data._id}}"
+                        object="{{data._id}}"
                         template_id="datatable"
                         toggle="selected">
                         <td class="padding:10px">
@@ -319,8 +319,8 @@
                                     <a
                                         actions="pass, openModal"
                                         modal-src="./module-views/form.html"
-                                        pass-collection="modules"
-                                        pass-document_id="{{data._id}}"
+                                        pass-array="modules"
+                                        pass-object="{{data._id}}"
                                         pass-name="html"
                                         pass_to="render"
                                         modal-width="320px"
@@ -328,24 +328,24 @@
                                         modal-header="false">
                                         <h4>
                                             From:<span
-                                                collection="{{document.collection}}"
-                                                document_id="{{data._id}}"
+                                                array="{{object.array}}"
+                                                object="{{data._id}}"
                                                 name="From"
                                                 >From</span
                                             >
                                         </h4>
                                         <h5
-                                            collection="{{document.collection}}"
-                                            document_id="{{data._id}}"
+                                            array="{{object.array}}"
+                                            object="{{data._id}}"
                                             name="status">
                                             Status
                                         </h5>
                                         <div
-                                            pass-collection="modules"
-                                            pass-document_id="{{data._id}}"
+                                            pass-array="modules"
+                                            pass-object="{{data._id}}"
                                             pass_to="form-fields"></div>
                                         <div
-                                            pass-collection="module-views"
+                                            pass-array="module-views"
                                             pass-filter-name="module_id"
                                             pass-filter-value="{{data._id}}"
                                             pass_to="module_id"></div>
@@ -357,8 +357,8 @@
                             <a
                                 actions="pass, openModal"
                                 modal-src="./module-views/form.html"
-                                pass-document_id="{{data._id}}"
-                                pass-collection="modules"
+                                pass-object="{{data._id}}"
+                                pass-array="modules"
                                 pass-name="html"
                                 pass_to="render"
                                 modal-width="320px"
@@ -367,21 +367,21 @@
                                 <h4>
                                     To:
                                     <span
-                                        collection="{{document.collection}}"
-                                        document_id="{{data._id}}"
+                                        array="{{object.array}}"
+                                        object="{{data._id}}"
                                         name="To"
                                         >To</span
                                     >
                                 </h4>
                                 <b
-                                    collection="{{document.collection}}"
-                                    document_id="{{data._id}}"
+                                    array="{{object.array}}"
+                                    object="{{data._id}}"
                                     name="CallStatus"
                                     >CallStatus</b
                                 >
                                 <div
-                                    pass-collection="modules"
-                                    pass-document_id="{{data._id}}"
+                                    pass-array="modules"
+                                    pass-object="{{data._id}}"
                                     pass_to="form-fields"></div>
                             </a>
                         </td>
@@ -389,8 +389,8 @@
                             <a
                                 actions="pass, openModal"
                                 modal-src="./module-views/form.html"
-                                pass-document_id="{{data._id}}"
-                                pass-collection="modules"
+                                pass-object="{{data._id}}"
+                                pass-array="modules"
                                 pass-name="html"
                                 pass_to="render"
                                 modal-width="320px"
@@ -398,23 +398,23 @@
                                 modal-header="false">
                                 <h4>
                                     Direction:<span
-                                        collection="{{document.collection}}"
-                                        document_id="{{data._id}}"
+                                        array="{{object.array}}"
+                                        object="{{data._id}}"
                                         name="Direction"
                                         >Direction</span
                                     >
                                 </h4>
                                 <h4>
                                     direction:<span
-                                        collection="{{document.collection}}"
-                                        document_id="{{data._id}}"
+                                        array="{{object.array}}"
+                                        object="{{data._id}}"
                                         name="direction"
                                         >direction</span
                                     >
                                 </h4>
                                 <div
-                                    pass-collection="modules"
-                                    pass-document_id="{{data._id}}"
+                                    pass-array="modules"
+                                    pass-object="{{data._id}}"
                                     pass_to="form-fields"></div>
                             </a>
                         </td>
@@ -422,22 +422,22 @@
                             <a
                                 actions="pass, openModal"
                                 modal-src="./module-views/form.html"
-                                pass-document_id="{{data._id}}"
-                                pass-collection="modules"
+                                pass-object="{{data._id}}"
+                                pass-array="modules"
                                 pass-name="html"
                                 pass_to="render"
                                 modal-width="320px"
                                 modal-color="#229954"
                                 modal-header="false">
                                 <b
-                                    collection="{{document.collection}}"
-                                    document_id="{{data._id}}"
+                                    array="{{object.array}}"
+                                    object="{{data._id}}"
                                     name="duration"
                                     >Duration</b
                                 >
                                 <div
-                                    pass-collection="modules"
-                                    pass-document_id="{{data._id}}"
+                                    pass-array="modules"
+                                    pass-object="{{data._id}}"
                                     pass_to="form-fields"></div>
                             </a>
                         </td>
@@ -445,22 +445,22 @@
                             <a
                                 actions="pass, openModal"
                                 modal-src="./module-views/form.html"
-                                pass-document_id="{{data._id}}"
-                                pass-collection="modules"
+                                pass-object="{{data._id}}"
+                                pass-array="modules"
                                 pass-name="html"
                                 pass_to="render"
                                 modal-width="320px"
                                 modal-color="#229954"
                                 modal-header="false">
                                 <b
-                                    collection="{{document.collection}}"
-                                    document_id="{{data._id}}"
+                                    array="{{object.array}}"
+                                    object="{{data._id}}"
                                     name="CallSid"
                                     >CallSid</b
                                 >
                                 <div
-                                    pass-collection="modules"
-                                    pass-document_id="{{data._id}}"
+                                    pass-array="modules"
+                                    pass-object="{{data._id}}"
                                     pass_to="form-fields"></div>
                             </a>
                         </td>
@@ -473,7 +473,7 @@
         <button
             actions="pass, openModal"
             modal-src="./module-views/form.html"
-            pass-collection="modules"
+            pass-array="modules"
             pass-name="form-html"
             pass_to="render"
             modal-width="320px"
