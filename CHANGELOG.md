@@ -1,3 +1,20 @@
+# [1.6.0](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.29...v1.6.0) (2023-08-16)
+
+
+### Bug Fixes
+
+* crud attributes renamed ([2b83f22](https://github.com/CoCreate-app/CoCreate-twilio/commit/2b83f229c88c61a3a39ff9cfc0b7c6dbbe2a898c))
+* render-array and render-object attributes renamed to render ([11a772a](https://github.com/CoCreate-app/CoCreate-twilio/commit/11a772ab33959820ae609751036912ae8137c274))
+* replace -target -selector ([e40c95b](https://github.com/CoCreate-app/CoCreate-twilio/commit/e40c95bbc5ffdcfd969abc36bafc4a4cc424e6c1))
+* updated fetch-type to filter-on ([00b3006](https://github.com/CoCreate-app/CoCreate-twilio/commit/00b3006df056788b5bd6b54f29c33fcc4d376d5f))
+* webpack.config and package.json make use of mode=production instead of process.env ([2530577](https://github.com/CoCreate-app/CoCreate-twilio/commit/25305774b0d66f5f4ede20674a927b389d17962d))
+
+
+### Features
+
+* name attribute and variable renamed to key ([3fe0f41](https://github.com/CoCreate-app/CoCreate-twilio/commit/3fe0f41bcaf198b536bd2eb70d7c63421ac72bad))
+* update template_id to render-selector attribute. update filter attributes to filter selector-attributes ([b71dd66](https://github.com/CoCreate-app/CoCreate-twilio/commit/b71dd668a70969c7b713eecccd8956f5262f8a97))
+
 ## [1.5.29](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.5.28...v1.5.29) (2023-06-14)
 
 
