@@ -1,3 +1,12 @@
+## [1.7.1](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.7.0...v1.7.1) (2023-08-21)
+
+
+### Bug Fixes
+
+* /dist/CoCreate.js updated to https://CoCreate.app/dist/CoCreate.js ([dc62e83](https://github.com/CoCreate-app/CoCreate-twilio/commit/dc62e836ef142cf4c3530fb2308195c80030e933))
+* replace cdn with /dist ([cafb800](https://github.com/CoCreate-app/CoCreate-twilio/commit/cafb800981aabfea3d89a922cc7aed85bc74176c))
+* update file uploader ([8ea6c01](https://github.com/CoCreate-app/CoCreate-twilio/commit/8ea6c01f5078688c0ea48772a4b7b8fed05391db))
+
 # [1.7.0](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.6.0...v1.7.0) (2023-08-17)
 
 
