@@ -1,3 +1,11 @@
+## [1.8.2](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.8.1...v1.8.2) (2023-09-18)
+
+
+### Bug Fixes
+
+*  Add path and pathname ([3de68ff](https://github.com/CoCreate-app/CoCreate-twilio/commit/3de68ffdfcd30c6fa9a307c91ec22edeb2f2203f))
+* Update CoCreate depndencies to latest versions ([1f248c3](https://github.com/CoCreate-app/CoCreate-twilio/commit/1f248c34e82f651851caedcc5ed4c174632cd44b))
+
 ## [1.8.1](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.8.0...v1.8.1) (2023-08-21)
 
 
