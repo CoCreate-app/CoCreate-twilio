@@ -1,3 +1,10 @@
+## [1.9.4](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.9.3...v1.9.4) (2023-10-16)
+
+
+### Bug Fixes
+
+* replaced deleteDocuments with delete ([061bf67](https://github.com/CoCreate-app/CoCreate-twilio/commit/061bf678642f47651d1425434764207ba3f23521))
+
 ## [1.9.3](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.9.2...v1.9.3) (2023-10-14)
 
 
