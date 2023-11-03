@@ -1,3 +1,11 @@
+## [1.9.6](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.9.5...v1.9.6) (2023-11-03)
+
+
+### Bug Fixes
+
+* favicon.ico path ([e9bf905](https://github.com/CoCreate-app/CoCreate-twilio/commit/e9bf90512f961103e455739ae226779dbf920d23))
+* update dependencies to the lates versions ([4877ec1](https://github.com/CoCreate-app/CoCreate-twilio/commit/4877ec1bf8d9b15484ed9d3115396db9ce0cc259))
+
 ## [1.9.5](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.9.4...v1.9.5) (2023-10-25)
 
 
