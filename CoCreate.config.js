@@ -12,8 +12,7 @@ module.exports = {
                 "pathname": "/docs/twilio/index.html",
                 "src": "{{./docs/index.html}}",
                 "host": [
-                    "*",
-                    "general.cocreate.app"
+                    "*"
                 ],
                 "directory": "twilio",
                 "content-type": "{{content-type}}",
