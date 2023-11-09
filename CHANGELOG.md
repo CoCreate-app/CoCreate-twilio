@@ -1,3 +1,11 @@
+## [1.9.7](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.9.6...v1.9.7) (2023-11-09)
+
+
+### Bug Fixes
+
+* meta name typo ([e16d2a3](https://github.com/CoCreate-app/CoCreate-twilio/commit/e16d2a3e195ca164851b3934003941c4abdbc72b))
+* update host ([efd009c](https://github.com/CoCreate-app/CoCreate-twilio/commit/efd009c2f779fd35e1003d26ba160c4db2ac056d))
+
 ## [1.9.6](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.9.5...v1.9.6) (2023-11-03)
 
 
