@@ -86,11 +86,11 @@
                 <!-- Render Builder -->
                 <li class="margin-right:15px">
                     <a
-                        actions="pass, openModal"
-                        pass-array="module-views"
-                        pass-object="5fa86bfd4b4c3e4dea76abec"
-                        pass-key="html"
-                        pass_to="render"
+                        actions="state, openModal"
+                        state-array="module-views"
+                        state-object="5fa86bfd4b4c3e4dea76abec"
+                        state-key="html"
+                        state_to="render"
                         modal-width="100%"
                         modal-header="false"
                         class="sessionBuilderUI_Id">
@@ -98,27 +98,27 @@
                             class="display:flex height:18px fill:#505050"
                             src="/assets/svg/palette.svg"></i>
                         <div
-                            pass-array="module-views"
-                            pass-object=""
-                            pass_to="builder"
-                            pass_id="render"></div>
+                            state-array="module-views"
+                            state-object=""
+                            state_to="builder"
+                            state_id="render"></div>
                     </a>
                 </li>
                 <!-- Render Module Form -->
                 <li class="margin-right:15px">
                     <a
-                        actions="pass, openModal"
+                        actions="state, openModal"
                         modal-src="form.html"
-                        pass-array="module-views"
-                        pass-object=""
-                        pass_to="render"
+                        state-array="module-views"
+                        state-object=""
+                        state_to="render"
                         modal-width="320px"
                         modal-height="100%"
                         modal-color="#229954"
                         modal-header="false"
                         modal-x=""
                         modal-y=""
-                        pass_id="module_id">
+                        state_id="module_id">
                         <i
                             class="height:16px fill:#505050"
                             src="/assets/svg/plus.svg"></i>
@@ -158,7 +158,7 @@
                     ></a>
                 </li>
                 <li class="margin-right:15px">
-                    <a actions="import" array="" pass_id="datatable"
+                    <a actions="import" array="" state_id="datatable"
                         ><i
                             class="height:18px fill:#505050"
                             src="/assets/svg/file-upload.svg"></i
@@ -317,12 +317,12 @@
                                 </div>
                                 <div class="margin-left:10px">
                                     <a
-                                        actions="pass, openModal"
+                                        actions="state, openModal"
                                         modal-src="./module-views/form.html"
-                                        pass-array="modules"
-                                        pass-object="{{data._id}}"
-                                        pass-key="html"
-                                        pass_to="render"
+                                        state-array="modules"
+                                        state-object="{{data._id}}"
+                                        state-key="html"
+                                        state_to="render"
                                         modal-width="320px"
                                         modal-color="#229954"
                                         modal-header="false">
@@ -341,26 +341,26 @@
                                             Status
                                         </h5>
                                         <div
-                                            pass-array="modules"
-                                            pass-object="{{data._id}}"
-                                            pass_to="form-fields"></div>
+                                            state-array="modules"
+                                            state-object="{{data._id}}"
+                                            state_to="form-fields"></div>
                                         <div
-                                            pass-array="module-views"
-                                            pass-filter-key="module_id"
-                                            pass-filter-value="{{data._id}}"
-                                            pass_to="module_id"></div>
+                                            state-array="module-views"
+                                            state-filter-key="module_id"
+                                            state-filter-value="{{data._id}}"
+                                            state_to="module_id"></div>
                                     </a>
                                 </div>
                             </div>
                         </td>
                         <td class="padding:10px">
                             <a
-                                actions="pass, openModal"
+                                actions="state, openModal"
                                 modal-src="./module-views/form.html"
-                                pass-object="{{data._id}}"
-                                pass-array="modules"
-                                pass-key="html"
-                                pass_to="render"
+                                state-object="{{data._id}}"
+                                state-array="modules"
+                                state-key="html"
+                                state_to="render"
                                 modal-width="320px"
                                 modal-color="#229954"
                                 modal-header="false">
@@ -380,19 +380,19 @@
                                     >CallStatus</b
                                 >
                                 <div
-                                    pass-array="modules"
-                                    pass-object="{{data._id}}"
-                                    pass_to="form-fields"></div>
+                                    state-array="modules"
+                                    state-object="{{data._id}}"
+                                    state_to="form-fields"></div>
                             </a>
                         </td>
                         <td class="padding:10px">
                             <a
-                                actions="pass, openModal"
+                                actions="state, openModal"
                                 modal-src="./module-views/form.html"
-                                pass-object="{{data._id}}"
-                                pass-array="modules"
-                                pass-key="html"
-                                pass_to="render"
+                                state-object="{{data._id}}"
+                                state-array="modules"
+                                state-key="html"
+                                state_to="render"
                                 modal-width="320px"
                                 modal-color="#229954"
                                 modal-header="false">
@@ -413,19 +413,19 @@
                                     >
                                 </h4>
                                 <div
-                                    pass-array="modules"
-                                    pass-object="{{data._id}}"
-                                    pass_to="form-fields"></div>
+                                    state-array="modules"
+                                    state-object="{{data._id}}"
+                                    state_to="form-fields"></div>
                             </a>
                         </td>
                         <td class="padding:10px">
                             <a
-                                actions="pass, openModal"
+                                actions="state, openModal"
                                 modal-src="./module-views/form.html"
-                                pass-object="{{data._id}}"
-                                pass-array="modules"
-                                pass-key="html"
-                                pass_to="render"
+                                state-object="{{data._id}}"
+                                state-array="modules"
+                                state-key="html"
+                                state_to="render"
                                 modal-width="320px"
                                 modal-color="#229954"
                                 modal-header="false">
@@ -436,19 +436,19 @@
                                     >Duration</b
                                 >
                                 <div
-                                    pass-array="modules"
-                                    pass-object="{{data._id}}"
-                                    pass_to="form-fields"></div>
+                                    state-array="modules"
+                                    state-object="{{data._id}}"
+                                    state_to="form-fields"></div>
                             </a>
                         </td>
                         <td class="padding:10px">
                             <a
-                                actions="pass, openModal"
+                                actions="state, openModal"
                                 modal-src="./module-views/form.html"
-                                pass-object="{{data._id}}"
-                                pass-array="modules"
-                                pass-key="html"
-                                pass_to="render"
+                                state-object="{{data._id}}"
+                                state-array="modules"
+                                state-key="html"
+                                state_to="render"
                                 modal-width="320px"
                                 modal-color="#229954"
                                 modal-header="false">
@@ -459,9 +459,9 @@
                                     >CallSid</b
                                 >
                                 <div
-                                    pass-array="modules"
-                                    pass-object="{{data._id}}"
-                                    pass_to="form-fields"></div>
+                                    state-array="modules"
+                                    state-object="{{data._id}}"
+                                    state_to="form-fields"></div>
                             </a>
                         </td>
                     </tr>
@@ -471,17 +471,17 @@
         </div>
 
         <button
-            actions="pass, openModal"
+            actions="state, openModal"
             modal-src="./module-views/form.html"
-            pass-array="modules"
-            pass-key="form-html"
-            pass_to="render"
+            state-array="modules"
+            state-key="form-html"
+            state_to="render"
             modal-width="320px"
             modal-height="100%"
             modal-color="#229954"
             modal-header="false"
             class="position:fixed bottom:15px right:15px padding:15px background:dodgerblue color:#fff font-size:1.5rem grow-hover border-radius:50% border-width:0 box-shadow:0px_2px_10px_0px_rgba(0,_0,_0,_0.4) z-index:8"
-            pass_id="module_id">
+            state_id="module_id">
             <i class="height:20px fill:#505050" src="/assets/svg/plus.svg"></i>
         </button>
 
