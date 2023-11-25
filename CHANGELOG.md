@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.11.0...v1.12.0) (2023-11-25)
+
+
+### Features
+
+* upgrade dependencies for latest features and fixes ([e2b1c12](https://github.com/CoCreate-app/CoCreate-twilio/commit/e2b1c12904f7b528a94c0a9ec39a4f8a71cf534b))
+
 # [1.11.0](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.10.0...v1.11.0) (2023-11-25)
 
 
