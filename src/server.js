@@ -27,7 +27,7 @@ class CoCreateTwilio {
         let org = 0;
         let client;
         try {
-            let org_data = await api.getOrg(params, this.name);
+            let org_data = await api.getOrganization(params, this.name);
             let environment = typeof params['environment'] != 'undefined' ? params['environment'] : this.environment;
             const accountId = org_data['apis.twilio.' + environment + '.twilioAccountId'];//org_data["apis"]["twilio"]["twilioAccountId"];
             const authToken = org_data['apis.twilio.' + environment + '.twilioAuthToken'];
