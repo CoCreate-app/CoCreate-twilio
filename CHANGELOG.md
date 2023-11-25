@@ -1,3 +1,16 @@
+# [1.11.0](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.10.0...v1.11.0) (2023-11-25)
+
+
+### Bug Fixes
+
+* pass attributes renamed to state ([a1855e3](https://github.com/CoCreate-app/CoCreate-twilio/commit/a1855e30c0b6b7d472d26fce91e0da7eeb6e1db6))
+* update nav, edit button and css path ([fee8c7a](https://github.com/CoCreate-app/CoCreate-twilio/commit/fee8c7a8e454d07399ff71cf05f1aafa16304e06))
+
+
+### Features
+
+* upgrade dependencies for latest features and fixes ([4986db3](https://github.com/CoCreate-app/CoCreate-twilio/commit/4986db3502ae5a5e00d3a8e093ac2d107a386a00))
+
 # [1.10.0](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.9.8...v1.10.0) (2023-11-19)
 
 
