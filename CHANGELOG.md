@@ -1,3 +1,10 @@
+## [1.12.1](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.12.0...v1.12.1) (2023-11-26)
+
+
+### Bug Fixes
+
+* update licensing details ([2130662](https://github.com/CoCreate-app/CoCreate-twilio/commit/2130662b3985be91973137b7557c6e2972f1def6))
+
 # [1.12.0](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.11.0...v1.12.0) (2023-11-25)
 
 
