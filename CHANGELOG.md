@@ -1,3 +1,10 @@
+## [1.12.2](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.12.1...v1.12.2) (2023-12-09)
+
+
+### Bug Fixes
+
+* getOrg() renamed to getOrganization() ([7276b42](https://github.com/CoCreate-app/CoCreate-twilio/commit/7276b42a5898accb47219687a57dd80a8e6e9835))
+
 ## [1.12.1](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.12.0...v1.12.1) (2023-11-26)
 
 
