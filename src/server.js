@@ -1,5 +1,4 @@
 'use strict'
-var api = require('@cocreate/api');
 const VoiceResponse = require('twilio').twiml.VoiceResponse;
 
 let array_name = "testtwillio";
@@ -27,7 +26,7 @@ class CoCreateTwilio {
         let org = 0;
         let client;
         try {
-            let org_data = await api.getOrganization(params, this.name);
+            let org_data = await this.crud.getOrganization(params, this.name);
             let environment = typeof params['environment'] != 'undefined' ? params['environment'] : this.environment;
             const accountId = org_data['apis.twilio.' + environment + '.twilioAccountId'];//org_data["apis"]["twilio"]["twilioAccountId"];
             const authToken = org_data['apis.twilio.' + environment + '.twilioAuthToken'];
@@ -42,7 +41,7 @@ class CoCreateTwilio {
                     .recordings
                     .create()
                     .then(recording => {
-                        api.send_response(that.wsManager, socket, { "type": type, "response": recording }, send_response);
+                        this.crud.send_response(that.wsManager, socket, { "type": type, "response": recording }, send_response);
                     });
 
                 break;
@@ -51,7 +50,7 @@ class CoCreateTwilio {
                     .recordings('Twilio.CURRENT')
                     .update({ status: 'paused' })
                     .then(recording => {
-                        api.send_response(that.wsManager, socket, { "type": type, "response": recording }, send_response);
+                        this.crud.send_response(that.wsManager, socket, { "type": type, "response": recording }, send_response);
                     });
                 break;
             case 'callRecordingResume':
@@ -59,7 +58,7 @@ class CoCreateTwilio {
                     .recordings('Twilio.CURRENT')
                     .update({ status: 'in-progress' })
                     .then(recording => {
-                        api.send_response(that.wsManager, socket, { "type": type, "response": recording }, send_response);
+                        this.crud.send_response(that.wsManager, socket, { "type": type, "response": recording }, send_response);
                     });
                 break;
             case 'callRecordingList':
@@ -68,10 +67,10 @@ class CoCreateTwilio {
                     .then(recordings => {
                         let response_recordings = [];
                         recordings.forEach(r => {
-                            r['url_public'] = 'https://api.twilio.com/2010-04-01/Accounts/' + config.accountSid + '/Recordings/' + r.sid + '.mp3';
+                            r['url_public'] = 'https://this.crud.twilio.com/2010-04-01/Accounts/' + config.accountSid + '/Recordings/' + r.sid + '.mp3';
                             response_recordings.push(r);
                         });
-                        api.send_response(that.wsManager, socket, { "type": type, "response": response_recordings }, send_response)
+                        this.crud.send_response(that.wsManager, socket, { "type": type, "response": response_recordings }, send_response)
                     });
                 break;
             case 'dialTransfer':
@@ -90,13 +89,13 @@ class CoCreateTwilio {
 										  <Dial><Client>frankie</Client></Dial>\
 										</Response>'
                                 });
-                                api.send_response(that.wsManager, socket, { "type": type, "response": data_original }, send_response)
+                                this.crud.send_response(that.wsManager, socket, { "type": type, "response": data_original }, send_response)
                             });
                     }
                 } catch (e) {
                     //create conference
                     data_original["transfer_call"] = true;
-                    api.send_response(that.wsManager, socket, { "type": type, "response": data_original }, send_response);
+                    this.crud.send_response(that.wsManager, socket, { "type": type, "response": data_original }, send_response);
                     data.method = 'craete.object'
                     that.wsManager.on(socket, data /* it will be request data */);
                 }
@@ -118,7 +117,7 @@ class CoCreateTwilio {
                             client.calls(call.parentCallSid).update({
                                 twiml: response.toString()
                             })
-                            api.send_response(that.wsManager, socket, { "type": type, "response": data_original }, send_response)
+                            this.crud.send_response(that.wsManager, socket, { "type": type, "response": data_original }, send_response)
                         });
                 }
                 break;
@@ -129,13 +128,13 @@ class CoCreateTwilio {
                         queues.forEach(q => {
                             resultado.push({ 'idqueue': q.sid, 'friendlyName': q.friendlyName })
                         })
-                        api.send_response(that.wsManager, socket, { "type": type, "response": resultado }, send_response);
+                        this.crud.send_response(that.wsManager, socket, { "type": type, "response": resultado }, send_response);
                     });
                 break;
             case 'deleteQueue':
                 let idqueue = data_original.data.idqueue;
                 client.queues(idqueue).remove();
-                api.send_response(that.wsManager, socket, { "type": type, "response": data_original.data }, send_response);
+                this.crud.send_response(that.wsManager, socket, { "type": type, "response": data_original.data }, send_response);
                 break;
             case 'dialConference':
                 try {
@@ -161,12 +160,12 @@ class CoCreateTwilio {
                                 await client.calls(call.parentCallSid).update({
                                     twiml: response.toString()
                                 });
-                                api.send_response(that.wsManager, socket, { "type": type, "response": data_original }, send_response)
+                                this.crud.send_response(that.wsManager, socket, { "type": type, "response": data_original }, send_response)
                             });
                     }
                 } catch (e) {
                     data_original["create_conference"] = true;
-                    api.send_response(that.wsManager, socket, { "type": type, "response": data_original }, send_response);
+                    this.crud.send_response(that.wsManager, socket, { "type": type, "response": data_original }, send_response);
                 }
                 break;
             case 'unholdConference':
@@ -217,7 +216,7 @@ class CoCreateTwilio {
                         conferences.forEach(c => {
                             resultado.push({ 'idconference': c.sid, 'friendlyName': c.friendlyName })
                         })
-                        api.send_response(that.wsManager, socket, { "type": type, "response": resultado }, send_response);
+                        this.crud.send_response(that.wsManager, socket, { "type": type, "response": resultado }, send_response);
                     })
                 break;
             case 'delParticipantsConference':
@@ -230,7 +229,7 @@ class CoCreateTwilio {
                     .participants(data_original.data.idparticipant)
                     .update({ hold: true, holdUrl: url_twilio + '?opt=holdmusic' })
                     .then(participant => {
-                        api.send_response(that.wsManager, socket, { "type": type, "response": participant.callSid }, send_response);
+                        this.crud.send_response(that.wsManager, socket, { "type": type, "response": participant.callSid }, send_response);
                         //console.log(participant.callSid);
                     });
                 break;
@@ -239,7 +238,7 @@ class CoCreateTwilio {
                     .participants(data_original.data.idparticipant)
                     .update({ hold: false })
                     .then(participant => {
-                        api.send_response(that.wsManager, socket, { "type": type, "response": participant.callSid }, send_response);
+                        this.crud.send_response(that.wsManager, socket, { "type": type, "response": participant.callSid }, send_response);
                     });
                 break;
             case 'muteParticipantsConference':
@@ -247,7 +246,7 @@ class CoCreateTwilio {
                     .participants(data_original.data.idparticipant)
                     .update({ muted: true })
                     .then(participant => {
-                        api.send_response(that.wsManager, socket, { "type": type, "response": participant.callSid }, send_response);
+                        this.crud.send_response(that.wsManager, socket, { "type": type, "response": participant.callSid }, send_response);
                     });
                 break;
             case 'unmuteParticipantsConference':
@@ -255,7 +254,7 @@ class CoCreateTwilio {
                     .participants(data_original.data.idparticipant)
                     .update({ muted: false })
                     .then(participant => {
-                        api.send_response(that.wsManager, socket, { "type": type, "response": participant.callSid }, send_response);
+                        this.crud.send_response(that.wsManager, socket, { "type": type, "response": participant.callSid }, send_response);
                     });
                 break;
             case 'getParticipantsConference':
@@ -272,18 +271,18 @@ class CoCreateTwilio {
                             response.push(participant);
                         }
                         let data = { 'idconference': data_original.data.CallSid, 'participants': response };
-                        api.send_response(that.wsManager, socket, { "type": type, "response": data }, send_response);
+                        this.crud.send_response(that.wsManager, socket, { "type": type, "response": data }, send_response);
                     });
                 break;
             case 'response':
                 try {
                     let result = this.runResonse(twiml, data.data);
-                    api.send_response(that.wsManager, socket, { "type": type, "response": result }, send_response)
+                    this.crud.send_response(that.wsManager, socket, { "type": type, "response": result }, send_response)
 
                 } catch (e) {
 
                     console.log(e);
-                    api.send_response(that.wsManager, socket, { "type": type, "response": data_original }, send_response);
+                    this.crud.send_response(that.wsManager, socket, { "type": type, "response": data_original }, send_response);
                 }
                 break;
             case 'dial':
@@ -301,13 +300,13 @@ class CoCreateTwilio {
                                 await client.calls(call.parentCallSid).update({
                                     twiml: result
                                 });
-                                api.send_response(that.wsManager, socket, { "type": type, "response": data_original }, send_response)
+                                this.crud.send_response(that.wsManager, socket, { "type": type, "response": data_original }, send_response)
                             });
                     }
                 } catch (e) {
                     console.log(e);
                     data_original["create_conference"] = true;
-                    api.send_response(that.wsManager, socket, { "type": type, "response": data_original }, send_response);
+                    this.crud.send_response(that.wsManager, socket, { "type": type, "response": data_original }, send_response);
                 }
                 break;
         }
