@@ -1,3 +1,11 @@
+## [1.12.3](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.12.2...v1.12.3) (2024-02-05)
+
+
+### Bug Fixes
+
+*  removed from clinet.js ([b4b741a](https://github.com/CoCreate-app/CoCreate-twilio/commit/b4b741ad6ac2f785b51a69ffa580f2ac57c8cafd))
+* Removed https://cdn.cocreate.app/latest/CoCreate.min.css ([3b4c21b](https://github.com/CoCreate-app/CoCreate-twilio/commit/3b4c21be341dc625068103c5e312b6c0d8fbdff6))
+
 ## [1.12.2](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.12.1...v1.12.2) (2023-12-09)
 
 
