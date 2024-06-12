@@ -1,3 +1,11 @@
+## [1.12.5](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.12.4...v1.12.5) (2024-06-12)
+
+
+### Bug Fixes
+
+* bump cocreate dependencies ([425ef20](https://github.com/CoCreate-app/CoCreate-twilio/commit/425ef207296c1c429b5b3642a9b143194b95602d))
+* svg icon class ([6f91e37](https://github.com/CoCreate-app/CoCreate-twilio/commit/6f91e373daf0bee3a59ed466805db0b5e2f72d73))
+
 ## [1.12.4](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.12.3...v1.12.4) (2024-04-29)
 
 
