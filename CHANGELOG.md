@@ -1,3 +1,16 @@
+# [1.13.0](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.12.5...v1.13.0) (2024-11-04)
+
+
+### Bug Fixes
+
+* pretier.config.js and file formating ([52b2871](https://github.com/CoCreate-app/CoCreate-twilio/commit/52b2871212cb6c7cca400e527398691564ed7f59))
+
+
+### Features
+
+* add prettier.config.js and format files ([e4987d6](https://github.com/CoCreate-app/CoCreate-twilio/commit/e4987d626efb1cad429133cd50c5f5384d4d1848))
+* add prettier.config.js and format files ([6726ef9](https://github.com/CoCreate-app/CoCreate-twilio/commit/6726ef93403bfc5087b1d0d142d67dc16ef885f4))
+
 ## [1.12.5](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.12.4...v1.12.5) (2024-06-12)
 
 
