@@ -1,3 +1,10 @@
+## [1.13.1](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.13.0...v1.13.1) (2025-01-18)
+
+
+### Bug Fixes
+
+* filter-query-key ([788164a](https://github.com/CoCreate-app/CoCreate-twilio/commit/788164aec0a38420419dedc7098a02d6bd912005))
+
 # [1.13.0](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.12.5...v1.13.0) (2024-11-04)
 
 
