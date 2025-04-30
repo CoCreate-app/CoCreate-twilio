@@ -1,3 +1,13 @@
+## [1.13.2](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.13.1...v1.13.2) (2025-04-30)
+
+
+### Bug Fixes
+
+* added css-loader ([da40318](https://github.com/CoCreate-app/CoCreate-twilio/commit/da403181a4aa071e11eba920f55a2d3b275588f6))
+* update query attributes ([3b66cf1](https://github.com/CoCreate-app/CoCreate-twilio/commit/3b66cf1f0323449497b7c1fed2653b6947f3962b))
+* updated cocreate modules versions ([ffa8d4e](https://github.com/CoCreate-app/CoCreate-twilio/commit/ffa8d4e406f14a98a64cb3fd4156e1f709d98e2c))
+* webpack.config and devdependencies ([aa6827e](https://github.com/CoCreate-app/CoCreate-twilio/commit/aa6827eb60ba0dac468515f5c24f29fbea397760))
+
 ## [1.13.1](https://github.com/CoCreate-app/CoCreate-twilio/compare/v1.13.0...v1.13.1) (2025-01-18)
 
 
